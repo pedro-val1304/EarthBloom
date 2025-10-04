@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EarthBloom | Registro Científico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="fade-in">
+  <div class="main-content">
+    <header class="header">
+      <a href="index.html" class="logo">
+        <span class="logo-main">EarthBloom</span>
+        <span class="logo-sub">NASA</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="flores.html">Flores</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="registro.html" class="active">Registro</a>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <h2>Registro Científico Ciudadano</h2>
+      <p>Únete a nuestra iniciativa de ciencia ciudadana para el monitoreo de flora mexicana utilizando datos satelitales de la NASA</p>
+    </section>
+
+    <section class="features">
+      <div class="feature-grid" style="max-width: 600px; margin: 0 auto;">
+        <div class="feature-card" style="text-align: left; padding: 2rem;">
+          <form class="contact-form" id="registroForm">
+            <div style="margin-bottom: 1.5rem;">
+              <label for="cedula" style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;">Cédula Profesional / Identificación *</label>
+              <input type="text" id="cedula" name="cedula" placeholder="Ingresa tu cédula o identificación" required 
+                     style="width: 100%; padding: 0.8rem; border: 1px solid var(--blue-yonder); border-radius: 4px; background: rgba(255,255,255,0.1); color: white; font-family: 'Overpass', sans-serif;">
+              <small style="color: var(--slate-gray); font-size: 0.8rem;">Formato: números y letras sin espacios</small>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label for="nombre" style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;">Nombre Completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required 
+                     style="width: 100%; padding: 0.8rem; border: 1px solid var(--blue-yonder); border-radius: 4px; background: rgba(255,255,255,0.1); color: white; font-family: 'Overpass', sans-serif;">
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required 
+                     style="width: 100%; padding: 0.8rem; border: 1px solid var(--blue-yonder); border-radius: 4px; background: rgba(255,255,255,0.1); color: white; font-family: 'Overpass', sans-serif;">
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <label for="institucion" style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;">Institución / Afiliación</label>
+              <input type="text" id="institucion" name="institucion" placeholder="Tu institución u organización" 
+                     style="width: 100%; padding: 0.8rem; border: 1px solid var(--blue-yonder); border-radius: 4px; background: rgba(255,255,255,0.1); color: white; font-family: 'Overpass', sans-serif;">
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <label for="especialidad" style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;">Área de Especialidad</label>
+              <select id="especialidad" name="especialidad" 
+                      style="width: 100%; padding: 0.8rem; border: 1px solid var(--blue-yonder); border-radius: 4px; background: rgba(255,255,255,0.1); color: white; font-family: 'Overpass', sans-serif;">
+                <option value="">Selecciona tu especialidad</option>
+                <option value="botanica">Botánica</option>
+                <option value="ecologia">Ecología</option>
+                <option value="investigacion">Investigación Científica</option>
+                <option value="educacion">Educación Ambiental</option>
+                <option value="ciudadana">Ciencia Ciudadana</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <label style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;">Intereses de Investigación</label>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                  <input type="checkbox" name="intereses" value="flora_endemica">
+                  Flora Endémica
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                  <input type="checkbox" name="intereses" value="monitoreo_satelital">
+                  Monitoreo Satelital
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                  <input type="checkbox" name="intereses" value="conservacion">
+                  Conservación
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                  <input type="checkbox" name="intereses" value="cambio_climatico">
+                  Cambio Climático
+                </label>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn" style="width: 100%; text-align: center;">Registrarse en el Proyecto</button>
+            
+            <div style="text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--blue-yonder);">
+              <p style="color: var(--slate-gray); font-size: 0.9rem; margin: 0;">
+                ¿Ya tienes una cuenta? <a href="#" style="color: var(--neon-yellow); text-decoration: none;">Iniciar Sesión</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 EarthBloom — Tu ventana al mundo floral con NASA</p>
+    <div class="nasa-badge">NASA Space Apps Challenge 2025</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
