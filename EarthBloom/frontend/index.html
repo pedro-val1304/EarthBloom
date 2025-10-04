@@ -1,56 +1,65 @@
-<!-- frontend/templates/index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>EarthBloom — Observa el florecer de la Tierra</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom Watch | Inicio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <img src="{{ url_for('static', filename='images/EarthBloom_logo.png') }}" class="logo">
-    <h1>Observa el florecer de la Tierra</h1>
-  </header>
-  
-  <main>
-    <aside id="control-panel">
-      <label>Selecciona fecha:</label>
-      <input type="date" id="datePicker">
-      <label>O elige estación:</label>
-      <select id="season">
-        <option>Primavera</option>
-        <option>Verano</option>
-        <option>Otoño</option>
-        <option>Invierno</option>
-      </select>
-      <button onclick="loadBloom()">Analizar floración</button>
-    </aside>
+<body class="fade-in">
+  <div class="main-content">
+    <header class="header">
+      <a href="index.html" class="logo">Bloom <span>Watch</span></a>
 
-    <div id="map"></div>
-  </main>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
 
-  <script>
-    const map = L.map('map').setView([19.4, -99.1], 6);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="flores.html">Flores</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
 
-    async function loadBloom() {
-      const date = document.getElementById('datePicker').value;
-      const season = document.getElementById('season').value;
-      const res = await fetch(`/get_bloom?date=${date}&season=${season}`);
-      const data = await res.json();
+    <section class="hero">
+      <div class="hero-content">
+        <h2>El universo florece contigo</h2>
+        <p>Descubre la belleza de las flores endémicas de México a través de la combinación de observación satelital y ciencia ciudadana.</p>
+        <a href="flores.html" class="btn">Explorar Especies</a>
+      </div>
+    </section>
 
-      L.geoJSON(data, {
-        style: f => ({
-          color: getColor(f.properties.bloom_probability),
-          fillOpacity: 0.6
-        })
-      }).addTo(map);
-    }
+    <section class="intro">
+      <h2>Observa. Aprende. Florece.</h2>
+      <p>Bloom Watch integra tecnología satelital de la NASA con observaciones locales para estudiar cómo los patrones climáticos globales influyen en los ciclos de floración de las especies mexicanas.</p>
+      <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1000" alt="Jardín botánico con diversidad de flores" class="intro-img">
+    </section>
 
-    function getColor(prob) {
-      return prob > 0.8 ? '#EAFE07' : prob > 0.6 ? '#00C896' : '#006C74';
-    }
-  </script>
+    <section class="features">
+      <h2>Nuestro Enfoque</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Ciencia Satelital</h3>
+          <p>Utilizamos datos de observatorios espaciales para monitorear cambios en la vegetación y patrones de floración a escala global.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Flora Mexicana</h3>
+          <p>Documentamos y preservamos el conocimiento sobre las más de 11,000 especies de flores endémicas de México.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Educación Ambiental</h3>
+          <p>Compartimos conocimiento científico de manera accesible para promover la conservación de la biodiversidad.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Bloom Watch — Conectando tecnología y naturaleza para un futuro sostenible</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
