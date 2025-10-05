@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EarthBloom | Mapa de Floración</title>
   <link rel="stylesheet" href="css/main.css"/>
+  <script src="https://unpkg.com/i18next@23.7.6/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
 </head>
 <body class="fade-in">
   <div class="main-content">
@@ -19,17 +21,20 @@
         <span></span><span></span><span></span>
       </button>
 
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">ES</button>
+
       <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
-        <a href="index.html">Inicio</a>
-        <a href="flores.html">Flores</a>
-        <a href="mapa.html" class="active">Mapa (DEMO)</a>
-        <a href="registro.html">Registro</a>
+        <a href="index.html" data-i18n="nav.home">Inicio</a>
+        <a href="flores.html" data-i18n="nav.flowers">Flores</a>
+        <a href="nuestro_equipo.html" data-i18n="nav.team">Nuestro Equipo</a>
+        <a href="mapa.html" class="active" data-i18n="nav.map">Mapa (DEMO)</a>
+        <a href="registro.html" data-i18n="nav.register">Registro</a>
       </nav>
     </header>
 
     <section class="intro">
-      <h2>Mapa de Floración</h2>
-      <p>Monitoreo en tiempo real de las zonas de floración en México utilizando datos satelitales de la NASA.</p>
+      <h2 data-i18n="map.title">Mapa de Floración</h2>
+      <p data-i18n="map.description">Monitoreo en tiempo real de las zonas de floración en México utilizando datos satelitales de la NASA.</p>
     </section>
 
   <footer class="footer" role="contentinfo">
@@ -39,7 +44,7 @@
       <a href="index.html" class="brand-link" aria-label="Ir al inicio de EarthBloom">
         <img src="images/logo_1.png" alt="Logo EarthBloom" class="brand-logo" loading="lazy" />
       </a>
-      <p class="brand-tag">Documentando la biodiversidad mexicana</p>
+      <p class="brand-tag" data-i18n="footer.brand.tag">Documentando la biodiversidad mexicana</p>
       <div class="badge-row">
         <a href="https://www.spaceappschallenge.org/" target="_blank" rel="noopener"
            class="badge-link" aria-label="NASA Space Apps Challenge">
@@ -50,18 +55,18 @@
 
     <!-- Sección 2: Navegación -->
     <nav class="footer__nav" aria-label="Navegación del sitio">
-      <h4 class="footer__title">Sitio</h4>
+      <h4 class="footer__title" data-i18n="footer.nav.title">Sitio</h4>
       <ul class="footer__list">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="flores.html">Flores</a></li>
-        <li><a href="mapa.html">Mapa</a></li>
-        <li><a href="registro.html">Registro</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="flores.html" data-i18n="nav.flowers">Flores</a></li>
+        <li><a href="mapa.html" data-i18n="nav.map">Mapa (DEMO)</a></li>
+        <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
       </ul>
     </nav>
 
     <!-- Sección 3: Recursos -->
     <div class="footer__resources">
-      <h4 class="footer__title">Recursos</h4>
+      <h4 class="footer__title" data-i18n="footer.resources.title">Recursos</h4>
       <ul class="footer__list">
         <li><a href="https://observer.globe.gov/do-globe-observer/do-more/data-requests/wildflower-blooms" target="_blank" rel="noopener">Globe Observer</a></li>
         <li><a href="https://leafletjs.com/" target="_blank" rel="noopener">LeafLet</a></li>
@@ -71,7 +76,7 @@
 
     <!-- Sección 4: Contacto -->
     <div class="footer__contact">
-      <h4 class="footer__title">Contacto</h4>
+      <h4 class="footer__title" data-i18n="footer.contact.title">Contacto</h4>
       <ul class="footer__list">
         <li><a href="jose.valenzuela6861@alumnos.udg.mx">jose.valenzuela6861@alumnos.udg.mx</a></li>
         <li><a href="https://github.com/pedro-val1304/EarthBloom" target="_blank" rel="noopener">GitHub</a></li>
@@ -80,11 +85,11 @@
   </div>
 
   <div class="footer__bottom">
-    <p>© 2025 EarthBloom. Todos los derechos reservados.</p>
+    <p data-i18n="footer.copyright">© 2025 EarthBloom. Todos los derechos reservados.</p>
     <ul class="footer__legal">
-      <li><a href="#">Privacidad</a></li>
-      <li><a href="#">Términos</a></li>
-      <li><a href="#">Accesibilidad</a></li>
+      <li><a href="#" data-i18n="footer.legal.privacy">Privacidad</a></li>
+      <li><a href="#" data-i18n="footer.legal.terms">Términos</a></li>
+      <li><a href="#" data-i18n="footer.legal.accessibility">Accesibilidad</a></li>
     </ul>
   </div>
 </footer>

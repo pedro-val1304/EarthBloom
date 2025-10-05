@@ -246,11 +246,86 @@ class ContactForm {
   }
 }
 
+// Clase para manejar el cambio de idioma
+class LanguageToggle {
+  constructor() {
+    this.button = document.getElementById('lang-toggle');
+    if (this.button) {
+      this.init();
+    }
+  }
+
+  init() {
+    this.button.addEventListener('click', () => this.toggleLanguage());
+    this.updateButtonText();
+  }
+
+  toggleLanguage() {
+    const currentLang = i18next.language;
+    const newLang = currentLang === 'es' ? 'en' : 'es';
+    i18next.changeLanguage(newLang, () => {
+      this.translatePage();
+      this.updateButtonText();
+    });
+  }
+
+  updateButtonText() {
+    const currentLang = i18next.language;
+    this.button.textContent = currentLang.toUpperCase();
+  }
+
+  translatePage() {
+    // Traducir elementos con data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      el.textContent = i18next.t(key);
+    });
+
+    // Traducir valores de opciones
+    document.querySelectorAll('option[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      el.textContent = i18next.t(key);
+    });
+  }
+}
+
+// Inicialización de i18next
+async function initI18n() {
+  await i18next
+    .use(i18nextBrowserLanguageDetector)
+    .init({
+      lng: navigator.language.split('-')[0] || 'es',
+      fallbackLng: 'es',
+      resources: {
+        es: {
+          translation: await fetch('locales/es/translation.json').then(r => r.json())
+        },
+        en: {
+          translation: await fetch('locales/en/translation.json').then(r => r.json())
+        }
+      }
+    });
+
+  // Traducir elementos con data-i18n
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    el.textContent = i18next.t(key);
+  });
+
+  // Traducir valores de opciones
+  document.querySelectorAll('option[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    el.textContent = i18next.t(key);
+  });
+}
+
 // Inicialización cuando el DOM está listo
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
+  await initI18n();
   new Navigation();
   new PageTransitions();
   new ContactForm();
+  new LanguageToggle();
 
   // Inicializar mapa si la función global existe
   if (typeof iniciarMapa !== 'undefined') {

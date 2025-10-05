@@ -85,3 +85,26 @@
     height: 2px;
     background: linear-gradient(90deg, var(--acento-principal) 0%, var(--acento-secundario) 100%);
 }
+
+/* Botón de cambio de idioma */
+.lang-toggle {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--texto-principal);
+    background: var(--acento-principal);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+}
+
+.lang-toggle:hover {
+    background: var(--acento-secundario);
+    color: var(--color-blanco-calido);
+    transform: translateY(-1px);
+}

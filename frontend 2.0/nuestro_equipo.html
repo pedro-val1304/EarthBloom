@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EarthBloom | Equipo</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="https://unpkg.com/i18next@23.7.6/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+</head>
+<body class="fade-in">
+  <div class="main-content">
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img src="images/logo_2.png" class="logo-png" alt="EarthBloom Logo" />
+        <span class="logo-main">EarthBloom</span>
+        <span class="logo-sub">NASA</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">ES</button>
+
+      <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+        <a href="index.html" data-i18n="nav.home">Inicio</a>
+        <a href="flores.html" data-i18n="nav.flowers">Flores</a>
+        <a href="equipo.html" class="active" data-i18n="nav.team">Equipo</a>
+        <a href="mapa.html" data-i18n="nav.map">Mapa (DEMO)</a>
+        <a href="registro.html" data-i18n="nav.register">Registro</a>
+      </nav>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro">
+      <h2 data-i18n="team.title">Nuestro Equipo</h2>
+      <p data-i18n="team.subtitle">
+        Somos un equipo multidisciplinario que combina ciencia de datos, ecología y diseño para convertir la fenología en información accionable.
+      </p>
+      <img
+        src="https://cdn.abacus.ai/images/1a828090-01be-428a-a51a-f6ee84559d4c.png"
+        alt="Ilustración de flora mexicana como inspiración del proyecto"
+        class="intro-img"
+        loading="lazy"
+      />
+    </section>
+
+    <!-- Equipo principal -->
+    <section class="features">
+      <h2 data-i18n="team.core">Equipo Núcleo</h2>
+      <div class="feature-grid">
+
+        <!-- Miembro 1 -->
+        <div class="feature-card">
+          <figure>
+            <img src="images/team/member1.jpg" alt="Foto miembro 1" />
+            <figcaption style="display:none;">Equipo EarthBloom</figcaption>
+          </figure>
+          <h3 data-i18n="team.m1.name">Nombre Apellido</h3>
+          <p data-i18n="team.m1.role"><strong>ML/Geoespacial</strong> · Modelado espacio‑temporal, pipelines satelitales (HLS/MODIS/VIIRS), APIs.</p>
+          <p data-i18n="team.m1.bio">Experiencia en series temporales, inferencia a escala en la nube y visualización de mapas.</p>
+          <p>
+            <a href="#" class="btn" style="padding:.6rem 1.2rem" data-i18n="team.cta.linkedin">LinkedIn</a>
+            <a href="#" class="btn" style="padding:.6rem 1.2rem" data-i18n="team.cta.github">GitHub</a>
+          </p>
+        </div>
+
+        <!-- Miembro 2 -->
+        <div class="feature-card">
+          <figure>
+            <img src="images/team/member2.jpg" alt="Foto miembro 2" />
+          </figure>
+          <h3 data-i18n="team.m2.name">Nombre Apellido</h3>
+          <p data-i18n="team.m2.role"><strong>Ecología/Fenología</strong> · Protocolos de validación, especies y fenofases, pilotos.</p>
+          <p data-i18n="team.m2.bio">Diseño de muestreos y validación cruzada con observaciones y sensores remotos.</p>
+          <p>
+            <a href="#" class="btn" style="padding:.6rem 1.2rem" data-i18n="team.cta.scholar">Google Scholar</a>
+            <a href="#" class="btn" style="padding:.6rem 1.2rem" data-i18n="team.cta.orcid">ORCID</a>
+          </p>
+        </div>
+
+        <!-- Miembro 3 -->
+        <div class="feature-card">
+          <figure>
+            <img src="images/team/member3.jpg" alt="Foto miembro 3" />
+          </figure>
+          <h3 data-i18n="team.m3.name">Nombre Apellido</h3>
+          <p data-i18n="team.m3.role"><strong>Producto/Diseño</strong> · UX de mapas, accesibilidad, narrativas y web.</p>
+          <p data-i18n="team.m3.bio">Prototipado de interfaces, microcopys y visual storytelling para decisiones.</p>
+          <p>
+            <a href="#" class="btn" style="padding:.6rem 1.2rem" data-i18n="team.cta.portfolio">Portafolio</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mentores y colaboradores -->
+    <section class="features" style="padding-top:2rem;">
+      <h2 data-i18n="team.mentors">Mentores y Colaboradores</h2>
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <h3 data-i18n="team.collab.data">Datos Satelitales</h3>
+          <p data-i18n="team.collab.data.desc">
+            Integración de NASA Open Data (HLS, MODIS, VIIRS) y estaciones meteorológicas; preparación de variables predictoras.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3 data-i18n="team.collab.validation">Validación Científica</h3>
+          <p data-i18n="team.collab.validation.desc">
+            Observaciones verificadas por investigadores, taxonomía, y controles de calidad de ciencia ciudadana.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3 data-i18n="team.collab.partners">Aliados</h3>
+          <p data-i18n="team.collab.partners.desc">
+            Universidades, ONGs y municipios para pilotos, adopción y casos de uso en turismo y conservación.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Valores -->
+    <section class="features" style="padding-top:2rem;">
+      <h2 data-i18n="team.values">Nuestros Valores</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3 data-i18n="team.values.open">Ciencia Abierta</h3>
+          <p data-i18n="team.values.open.desc">Datos, modelos y decisiones auditables cuando es posible, preservando privacidad y ética.</p>
+        </div>
+        <div class="feature-card">
+          <h3 data-i18n="team.values.impact">Impacto</h3>
+          <p data-i18n="team.values.impact.desc">Hacer útil la fenología para políticas públicas, turismo responsable y restauración.</p>
+        </div>
+        <div class="feature-card">
+          <h3 data-i18n="team.values.access">Accesibilidad</h3>
+          <p data-i18n="team.values.access.desc">Interfaces claras, multilingües y pensadas para diversos contextos.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer igual que tu plantilla -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="brand-link" aria-label="Ir al inicio de EarthBloom">
+          <img src="images/logo_1.png" alt="Logo EarthBloom" class="brand-logo" loading="lazy" />
+        </a>
+        <p class="brand-tag" data-i18n="footer.brand.tag">Documentando la biodiversidad mexicana</p>
+        <div class="badge-row">
+          <a href="https://www.spaceappschallenge.org/" target="_blank" rel="noopener" class="badge-link" aria-label="NASA Space Apps Challenge">
+            <img src="images/nasa.png" alt="NASA Space Apps Challenge" class="badge-logo" loading="lazy" />
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegación del sitio">
+        <h4 class="footer__title" data-i18n="footer.nav.title">Sitio</h4>
+        <ul class="footer__list">
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="flores.html" data-i18n="nav.flowers">Flores</a></li>
+          <li><a href="mapa.html" data-i18n="nav.map">Mapa (DEMO)</a></li>
+          <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
+          <li><a href="equipo.html" data-i18n="nav.team">Equipo</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__resources">
+        <h4 class="footer__title" data-i18n="footer.resources.title">Recursos</h4>
+        <ul class="footer__list">
+          <li><a href="https://observer.globe.gov/do-globe-observer/do-more/data-requests/wildflower-blooms" target="_blank" rel="noopener">Globe Observer</a></li>
+          <li><a href="https://leafletjs.com/" target="_blank" rel="noopener">LeafLet</a></li>
+          <li><a href="https://worldview.earthdata.nasa.gov/" target="_blank" rel="noopener">NASA Worldview</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4 class="footer__title" data-i18n="footer.contact.title">Contacto</h4>
+        <ul class="footer__list">
+          <li><a href="mailto:contacto@earthbloom.mx">contacto@earthbloom.mx</a></li>
+          <li><a href="https://github.com/pedro-val1304/EarthBloom" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p data-i18n="footer.copyright">© 2025 EarthBloom. Todos los derechos reservados.</p>
+      <ul class="footer__legal">
+        <li><a href="#" data-i18n="footer.legal.privacy">Privacidad</a></li>
+        <li><a href="#" data-i18n="footer.legal.terms">Términos</a></li>
+        <li><a href="#" data-i18n="footer.legal.accessibility">Accesibilidad</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

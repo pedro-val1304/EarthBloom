@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "flowers": "Flores",
+    "map": "Mapa (DEMO)",
+    "register": "Registro",
+    "team": "Nuestro Equipo"
+  },
+  "hero": {
+    "title": "EarthBloom",
+    "subtitle": "NASA",
+    "description": "Monitoreo satelital de patrones de floración en colaboración con NASA Open Data. Descubre la belleza de las flores endémicas de México a través de la ciencia ciudadana y tecnología espacial.",
+    "button": "Explorar Especies"
+  },
+  "intro": {
+    "title": "Observa. Aprende. Florece.",
+    "description": "Plataforma inteligente para monitorear y predecir la floración a escala espacial y temporal. Integra datos satelitales, estaciones meteorológicas, series fenológicas históricas y observaciones. Genera mapas de probabilidad de floración por especie y por píxel. . Esto permite dirigir el muestreo en campo, optimizar recursos y ofrecer calendarios locales para turismo, festivales y gestión municipal. Conoce la diversidad de la flora Mexicana."
+  },
+  "features": {
+    "title": "Nuestro Enfoque",
+    "satellite": {
+      "title": "Ciencia Satelital NASA",
+      "description": "Utilizamos datos de observatorios y misiones de la NASA (índices de vegetación, temperatura de superficie, humedad del suelo, nubosidad) para detectar y monitorear patrones de floración a escala regional y nacional con alta cobertura espacial y temporal."
+    },
+    "crowdsourcing": {
+      "title": "Crowdsourcing y validación",
+      "description": "Integramos observaciones de campo aportadas por la comunidad y expertos (fotos georreferenciadas, fechas y fenofases) con controles de calidad y verificación cruzada. Estas contribuciones alimentan nuestros modelos y mapas de floración, ampliando cobertura espacial/temporal y mejorando la precisión en tiempo casi real."
+    },
+    "alerts": {
+      "title": "Alertas y Calendarios de Floración",
+      "description": "Generamos mapas y calendarios operativos con ventanas de pico de floración, niveles de confianza y zonas prioritarias. Esto habilita planeación turística, logística de monitoreo y toma de decisiones para conservación y gestión local."
+    }
+  },
+  "footer": {
+    "brand": {
+      "tag": "Documentando la biodiversidad mexicana"
+    },
+    "nav": {
+      "title": "Sitio"
+    },
+    "resources": {
+      "title": "Recursos"
+    },
+    "contact": {
+      "title": "Contacto"
+    },
+    "legal": {
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "accessibility": "Accesibilidad"
+    },
+    "copyright": "© 2025 EarthBloom. Todos los derechos reservados."
+  },
+  "flowers": {
+    "title": "Especies de Flores Mexicanas",
+    "subtitle": "Descubre la diversidad de la flora endémica de México monitoreada a través de tecnología satelital de la NASA.",
+    "regions": "Especies por Región",
+    "huasteca": {
+      "name": "Huasteca Potosina",
+      "description": "Selvas bajas y climas húmedos que favorecen floraciones abundantes durante primavera y verano."
+    },
+    "jalisco": {
+      "name": "Jalisco",
+      "description": "Transición entre bosques templados y selvas bajas, con floraciones marcadas por la temporada de lluvias."
+    },
+    "cdmx": {
+      "name": "Ciudad de México",
+      "description": "Transición urbano-forestal con lluvias estivales; picos de floración desde finales de primavera hasta otoño."
+    }
+  },
+  "map": {
+    "title": "Mapa de Floración",
+    "description": "Monitoreo en tiempo real de las zonas de floración en México utilizando datos satelitales de la NASA."
+  },
+  "register": {
+    "title": "Registro Científico Ciudadano",
+    "subtitle": "Únete a nuestra iniciativa de ciencia ciudadana para el monitoreo de flora mexicana utilizando datos satelitales de la NASA",
+    "form": {
+      "cedula": {
+        "label": "Cédula Profesional / Identificación *",
+        "placeholder": "Ingresa tu cédula o identificación",
+        "help": "Formato: números y letras sin espacios"
+      },
+      "nombre": {
+        "label": "Nombre Completo *",
+        "placeholder": "Tu nombre completo"
+      },
+      "email": {
+        "label": "Correo Electrónico *",
+        "placeholder": "tu@email.com"
+      },
+      "institucion": {
+        "label": "Institución / Afiliación",
+        "placeholder": "Tu institución u organización"
+      },
+      "especialidad": {
+        "label": "Área de Especialidad",
+        "placeholder": "Selecciona tu especialidad",
+        "options": {
+          "default": "Selecciona tu especialidad",
+          "botanica": "Botánica",
+          "ecologia": "Ecología",
+          "investigacion": "Investigación Científica",
+          "educacion": "Educación Ambiental",
+          "ciudadana": "Ciencia Ciudadana",
+          "otro": "Otro"
+        }
+      },
+      "intereses": {
+        "title": "Intereses de Investigación",
+        "flora_endemica": "Flora Endémica",
+        "monitoreo_satelital": "Monitoreo Satelital",
+        "conservacion": "Conservación",
+        "cambio_climatico": "Cambio Climático"
+      },
+      "submit": "Registrarse en el Proyecto",
+      "login": "¿Ya tienes una cuenta? Iniciar Sesión"
+    }
+  }
+}

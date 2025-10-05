@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "flowers": "Flowers",
+    "map": "Map (DEMO)",
+    "register": "Register",
+    "team": "Our Team"
+  },
+  "hero": {
+    "title": "EarthBloom",
+    "subtitle": "NASA",
+    "description": "Satellite monitoring of flowering patterns in collaboration with NASA Open Data. Discover the beauty of Mexico's endemic flowers through citizen science and space technology.",
+    "button": "Explore Species"
+  },
+  "intro": {
+    "title": "Observe. Learn. Bloom.",
+    "description": "Intelligent platform to monitor and predict flowering at spatial and temporal scales. Integrates satellite data, weather stations, historical phenological series, and observations. Generates probability maps of flowering by species and by pixel. This allows directing field sampling, optimizing resources, and offering local calendars for tourism, festivals, and municipal management. Learn about the diversity of Mexican flora."
+  },
+  "features": {
+    "title": "Our Approach",
+    "satellite": {
+      "title": "NASA Satellite Science",
+      "description": "We use data from NASA observatories and missions (vegetation indices, surface temperature, soil moisture, cloudiness) to detect and monitor flowering patterns at regional and national scales with high spatial and temporal coverage."
+    },
+    "crowdsourcing": {
+      "title": "Crowdsourcing and validation",
+      "description": "We integrate field observations contributed by the community and experts (georeferenced photos, dates and phenophases) with quality controls and cross-verification. These contributions feed our flowering models and maps, expanding spatial/temporal coverage and improving near-real-time accuracy."
+    },
+    "alerts": {
+      "title": "Flowering Alerts and Calendars",
+      "description": "We generate operational maps and calendars with peak flowering windows, confidence levels, and priority areas. This enables tourism planning, monitoring logistics, and decision-making for conservation and local management."
+    }
+  },
+  "footer": {
+    "brand": {
+      "tag": "Documenting Mexican biodiversity"
+    },
+    "nav": {
+      "title": "Site"
+    },
+    "resources": {
+      "title": "Resources"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "legal": {
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "accessibility": "Accessibility"
+    },
+    "copyright": "© 2025 EarthBloom. All rights reserved."
+  },
+  "flowers": {
+    "title": "Mexican Flower Species",
+    "subtitle": "Discover the diversity of Mexico's endemic flora monitored through NASA's satellite technology.",
+    "regions": "Species by Region",
+    "huasteca": {
+      "name": "Huasteca Potosina",
+      "description": "Low jungles and humid climates that favor abundant flowering during spring and summer."
+    },
+    "jalisco": {
+      "name": "Jalisco",
+      "description": "Transition between temperate forests and low jungles, with flowering marked by the rainy season."
+    },
+    "cdmx": {
+      "name": "Mexico City",
+      "description": "Urban-forest transition with summer rains; flowering peaks from late spring to autumn."
+    }
+  },
+  "map": {
+    "title": "Flowering Map",
+    "description": "Real-time monitoring of flowering areas in Mexico using NASA's satellite data."
+  },
+  "register": {
+    "title": "Citizen Science Registration",
+    "subtitle": "Join our citizen science initiative for monitoring Mexican flora using NASA's satellite data",
+    "form": {
+      "cedula": {
+        "label": "Professional License / Identification *",
+        "placeholder": "Enter your license or identification",
+        "help": "Format: numbers and letters without spaces"
+      },
+      "nombre": {
+        "label": "Full Name *",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Email Address *",
+        "placeholder": "your@email.com"
+      },
+      "institucion": {
+        "label": "Institution / Affiliation",
+        "placeholder": "Your institution or organization"
+      },
+      "especialidad": {
+        "label": "Area of Expertise",
+        "placeholder": "Select your specialty",
+        "options": {
+          "default": "Select your specialty",
+          "botanica": "Botany",
+          "ecologia": "Ecology",
+          "investigacion": "Scientific Research",
+          "educacion": "Environmental Education",
+          "ciudadana": "Citizen Science",
+          "otro": "Other"
+        }
+      },
+      "intereses": {
+        "title": "Research Interests",
+        "flora_endemica": "Endemic Flora",
+        "monitoreo_satelital": "Satellite Monitoring",
+        "conservacion": "Conservation",
+        "cambio_climatico": "Climate Change"
+      },
+      "submit": "Register for the Project",
+      "login": "Already have an account? Log In"
+    }
+  }
+}
