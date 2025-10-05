@@ -4,18 +4,18 @@
 
 :root {
     /* PALETA DE COLORES EARTHBLOOM - Inspirada en la naturaleza */
-    --color-rosa-suave: #e2a29c;
+    --color-rosa-suave: #3f05ff;
     --color-verde-tierra: #799a79;
     --color-arcilla-calida: #a68a73;
-    --color-crema: #faf9f8;
+    --color-crema:  #faf9f8;
     --color-carbon-profundo: #2e3330;
     --color-lavanda: #9d8fb0;
-    --color-salvia: #8a9b6e;
+    --color-salvia:  #2f3afd;
     --color-blanco-calido: #ffffef;
     --color-gris-suave: #9e9a95;
-    --color-rosa-petalo: #d4a5a5;
-    --color-verde-hoja: #6b8e6b;
-    --color-girasol: #66c229;
+    --color-rosa-petalo: #ec80ff;
+    --color-verde-hoja: lch(78.69% 109.33 136.02);
+    --color-girasol: #e6c229;
 
     /* SISTEMA DE COLORES FUNCIONALES */
     --fondo-principal: linear-gradient(135deg, var(--color-crema) 0%, var(--color-blanco-calido) 100%);

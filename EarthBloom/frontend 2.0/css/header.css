@@ -29,6 +29,11 @@
     text-transform: uppercase;
 }
 
+.logo-png {
+    height: calc(100% - 12px);
+    max-height: 52px;
+  }
+
 .logo-main {
     color: var(--texto-principal);
 }
