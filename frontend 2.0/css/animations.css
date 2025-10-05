@@ -1,0 +1,73 @@
+/* --- */
+/* ANIMACIONES Y EFECTOS */
+/* --- */
+
+.fade-in {
+    opacity: 0;
+    animation: aparecerPagina 1s ease forwards;
+}
+
+@keyframes aparecerPagina {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =============================================================== */
+/* COMPONENTE: MENÚ HAMBURGUESA (MÓVIL) */
+/* =============================================================== */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    background: var(--texto-principal);
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+.nav.show {
+    display: flex !important;
+    animation: deslizarEntrada 0.4s ease;
+}
+
+@keyframes deslizarEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
