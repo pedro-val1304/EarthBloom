@@ -10,7 +10,7 @@
   <div class="main-content">
     <header class="header">
       <a href="index.html" class="logo">
-        <img src="/EarthBloom/frontend 2.0/images/logo_2.png" class="logo-png" />
+        <img src="images/logo_2.png" class="logo-png" />
         <span class="logo-main">EarthBloom</span>
         <span class="logo-sub">NASA</span>
       </a>
@@ -28,19 +28,33 @@
     </header>
 
     <section class="hero">
-      <div class="hero-content">
-        <h2>
-          <span class="earth">Earth</span>
-          <span class="bloom">Bloom</span>
-        </h2>
-        <p>Monitoreo satelital de patrones de floración en colaboración con NASA Open Data. Descubre la belleza de las flores endémicas de México a través de la ciencia ciudadana y tecnología espacial.</p>
-        <a href="flores.html" class="btn">Explorar Especies</a>
-      </div>
-    </section>
+  <!-- Fondo de video -->
+  <video class="hero__bg" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+    <source src="images/florecer_1.mp4" type="video/mp4" />
+    <!-- Fallback -->
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <!-- Capa oscura para legibilidad -->
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <!-- Contenido -->
+  <div class="hero-content">
+    <h2>
+      <span class="earth">Earth</span>
+      <span class="bloom">Bloom</span>
+    </h2>
+    <p>Monitoreo satelital de patrones de floración en colaboración con NASA Open Data. Descubre la belleza de las flores endémicas de México a través de la ciencia ciudadana y tecnología espacial.</p>
+    <a href="flores.html" class="btn">Explorar Especies</a>
+  </div>
+</section>
 
     <section class="intro">
       <h2>Observa. Aprende. Florece.</h2>
-      <p>EarthBloom integra tecnología satelital de la NASA con observaciones locales para estudiar cómo los patrones climáticos globales influyen en los ciclos de floración de las especies mexicanas.</p>
+      <p>Plataforma inteligente para monitorear y predecir la floración a escala espacial y temporal. Integra datos satelitales, estaciones meteorológicas, series fenológicas históricas y observaciones.
+        Genera mapas de probabilidad de floración por especie y por píxel. . Esto permite dirigir el muestreo en campo, optimizar recursos y ofrecer calendarios locales para turismo, festivales y gestión municipal.
+        Conoce la diversidad de la flora Mexicana.
+      </p>
       <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1000" alt="Jardín botánico con diversidad de flores" class="intro-img">
     </section>
 

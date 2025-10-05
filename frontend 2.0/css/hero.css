@@ -9,11 +9,36 @@
     justify-content: center;
     text-align: center;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, rgba(250, 249, 248, 0.95) 0%, rgba(255, 254, 252, 0.9) 100%), url("https://images.unsplash.com/photo-1416879595882-3373a048b5b?w=1200") center/cover no-repeat;
     position: relative;
     overflow: hidden;
 }
 
+/* Video de fondo a pantalla completa */
+.hero__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center; /* prueba top center si abajo se oscurece */
+    filter: saturate(1.2) brightness(1.06) contrast(1.03);
+    z-index: 0;
+    
+}
+
+/* Capa de overlay para legibilidad (reemplaza el ::before anterior) */
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.42) 0%,
+        rgba(255, 255, 255, 0.36) 100%
+  );
+}
+
+/* Gradientes decorativos adicionales */
 .hero::before {
     content: '';
     position: absolute;
@@ -21,15 +46,27 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 80%, rgba(138, 155, 110, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(226, 162, 156, 0.1) 0%, transparent 50%);
-    z-index: 1;
+    background: radial-gradient(circle at 20% 80%, rgba(138, 155, 110, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(226, 162, 156, 0.15) 0%, transparent 50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Capa de luz suave prácticamente invisible, compensa bajones */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;            /* por debajo del contenido, por encima del video */
+  pointer-events: none;
+  background: radial-gradient(120% 120% at 50% 50%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 60%);
+  mix-blend-mode: screen; /* suma luz sin deslavar colores */
 }
 
 .hero-content {
     max-width: 800px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hero h2 {
@@ -41,6 +78,8 @@
     line-height: 1.1;
     letter-spacing: -0.5px;
     text-transform: uppercase;
+    text-shadow: 0 2px 20px rgba(255, 255, 255, 0.8),
+                 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero .earth {
@@ -61,4 +100,31 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6);
 }
+
+/* Responsivo: ajustar altura y tamaño de texto en móviles */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 70vh;
+        padding: 3rem 1.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}   
