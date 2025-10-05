@@ -8,20 +8,21 @@
 </head>
 <body class="fade-in">
   <div class="main-content">
-    <header class="header">
+     <header class="header">
       <a href="index.html" class="logo">
+        <img src="/EarthBloom/frontend 2.0/images/logo_2.png" class="logo-png" alt="EarthBloom Logo" />
         <span class="logo-main">EarthBloom</span>
         <span class="logo-sub">NASA</span>
       </a>
 
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
         <a href="index.html">Inicio</a>
-        <a href="flores.html">Flores</a>
-        <a href="mapa.html" class="active">Mapa</a>
+        <a href="flores.html" class="active">Flores</a>
+        <a href="mapa.html">Mapa</a>
         <a href="registro.html">Registro</a>
       </nav>
     </header>

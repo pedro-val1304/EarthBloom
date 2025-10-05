@@ -2,18 +2,19 @@
 
 :root {
   /* EarthBloom Color Palette - Inspirado en la naturaleza y flores */
-  --bloom-soft-pink: #e2a29c;
+  --bloom-soft-pink: #3f05ff;
   --bloom-earth-green: #799a79;
   --bloom-warm-clay: #a68a73;
   --bloom-cream: #faf9f8;
   --bloom-deep-charcoal: #2e3330;
   --bloom-lavender: #9d8fb0;
-  --bloom-sage: #8a9b6e;
+  --bloom-sage: #2f3afd;
   --bloom-warm-white: #fffefc;
   --bloom-soft-gray: #9e9a95;
-  --bloom-petal-pink: #d4a5a5;
-  --bloom-leaf-green: #6b8e6b;
-  --bloom-sunflower: #e6c229;
+  --bloom-petal-pink: #ec80ff;
+  --bloom-leaf-green: lch(78.69% 109.33 136.02);
+  --bloom-sunflower: #e6c229;
+
   
   /* Functional Colors - Sistema floral completo */
   --background-primary: linear-gradient(135deg, var(--bloom-cream) 0%, var(--bloom-warm-white) 100%);
@@ -61,11 +62,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3.75rem;
-  background: var(--bloom-warm-white);
+  background:linear-gradient(45deg, var(--electric-blue) 0%, var(--deep-blue)= 100%);
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 2px solid var(--accent-primary);
+  border-bottom: 2px solid var(--bloom-border-color);
   box-shadow: var(--shadow-primary);
 }
 
@@ -80,6 +81,13 @@ body {
   gap: 0.5rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+}
+
+.logo-png {
+  height: calc(100% - 16px);  /* deja ~8px de margen arriba y abajo */
+  max-height: 64px;           /* seguridad si cambias el header; puedes subirlo */
+  width: auto;
+  display: block;
 }
 
 .logo-main {
