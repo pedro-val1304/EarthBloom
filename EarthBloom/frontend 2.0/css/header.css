@@ -1,0 +1,87 @@
+/* --- */
+/* COMPONENTE: ENCABEZADO Y NAVEGACIÓN */
+/* --- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3.75rem;
+    background: var(--color-blanco-calido);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--acento-principal);
+    box-shadow: var(--sombra-principal);
+}
+
+/* Logo principal del sitio */
+.logo {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--texto-principal);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.logo-png {
+    height: calc(100% - 12px);
+    max-height: 52px;
+  }
+
+.logo-main {
+    color: var(--texto-principal);
+}
+
+.logo-sub {
+    color: var(--color-blanco-calido);
+    font-weight: 600;
+    font-size: 0.75rem;
+    background: var(--acento-principal);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    letter-spacing: 1px;
+}
+
+/* Navegacion principal */
+.nav {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav a {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--texto-principal);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.nav a:hover {
+    color: var(--acento-secundario);
+}
+
+.nav a.active {
+    color: var(--acento-principal);
+}
+
+.nav a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--acento-principal) 0%, var(--acento-secundario) 100%);
+}
