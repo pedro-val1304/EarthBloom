@@ -7186,25 +7186,26 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_0_144001",
+        "id": "ml_auto_0_173233",
         "Site": "\u00c1rea ML Auto 1",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 54027747.09538153,
-        "point_count": 60,
+        "point_count": 67,
         "user_points": 1,
         "sources": [
           "combined_polygon",
-          "combined_multipolygon",
-          "user"
+          "user",
+          "combined_multipolygon"
         ],
         "original_polygons_involved": [
           "Chino Hills",
-          "\u00c1rea ML 1"
+          "\u00c1rea ML 1",
+          "\u00c1rea ML Auto 1"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.130934"
+        "timestamp": "2025-10-05T17:32:33.021877"
       },
       "geometry": {
         "type": "Polygon",
@@ -7245,12 +7246,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_1_144001",
+        "id": "ml_auto_1_173233",
         "Site": "\u00c1rea ML Auto 2",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 3847855.4173675547,
-        "point_count": 31,
+        "point_count": 35,
         "user_points": 0,
         "sources": [
           "combined_polygon",
@@ -7258,11 +7259,12 @@
         ],
         "original_polygons_involved": [
           "Chino Hills",
-          "\u00c1rea ML 2"
+          "\u00c1rea ML 2",
+          "\u00c1rea ML Auto 2"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.131142"
+        "timestamp": "2025-10-05T17:32:33.022126"
       },
       "geometry": {
         "type": "Polygon",
@@ -7291,12 +7293,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_2_144001",
+        "id": "ml_auto_2_173233",
         "Site": "\u00c1rea ML Auto 3",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 1102449.2723695403,
-        "point_count": 31,
+        "point_count": 35,
         "user_points": 0,
         "sources": [
           "combined_polygon",
@@ -7304,11 +7306,12 @@
         ],
         "original_polygons_involved": [
           "Carrizo Plain National Monument",
-          "\u00c1rea ML 3"
+          "\u00c1rea ML 3",
+          "\u00c1rea ML Auto 3"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.131617"
+        "timestamp": "2025-10-05T17:32:33.022385"
       },
       "geometry": {
         "type": "Polygon",
@@ -7337,24 +7340,25 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_3_144001",
+        "id": "ml_auto_3_173233",
         "Site": "\u00c1rea ML Auto 4",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 116118913.06134021,
-        "point_count": 104,
+        "point_count": 116,
         "user_points": 0,
         "sources": [
           "combined_polygon",
           "combined_multipolygon"
         ],
         "original_polygons_involved": [
-          "Laura and Jack Dangermond Reserve",
-          "\u00c1rea ML 4"
+          "\u00c1rea ML 4",
+          "\u00c1rea ML Auto 4",
+          "Laura and Jack Dangermond Reserve"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.132494"
+        "timestamp": "2025-10-05T17:32:33.022993"
       },
       "geometry": {
         "type": "Polygon",
@@ -7415,25 +7419,26 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_4_144001",
+        "id": "ml_auto_4_173233",
         "Site": "\u00c1rea ML Auto 5",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 192039831.03933525,
-        "point_count": 85,
+        "point_count": 95,
         "user_points": 0,
         "sources": [
           "combined_polygon",
           "combined_multipolygon"
         ],
         "original_polygons_involved": [
-          "Sedgwick Reserve",
           "\u00c1rea ML 5",
-          "Figueroa Mountain"
+          "Figueroa Mountain",
+          "\u00c1rea ML Auto 5",
+          "Sedgwick Reserve"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.133006"
+        "timestamp": "2025-10-05T17:32:33.023525"
       },
       "geometry": {
         "type": "Polygon",
@@ -7486,24 +7491,25 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_5_144001",
+        "id": "ml_auto_5_173233",
         "Site": "\u00c1rea ML Auto 6",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 92296477.72091085,
-        "point_count": 97,
+        "point_count": 108,
         "user_points": 0,
         "sources": [
           "combined_polygon",
           "combined_multipolygon"
         ],
         "original_polygons_involved": [
+          "Monta\u00f1a de Oro State Park",
           "\u00c1rea ML 6",
-          "Monta\u00f1a de Oro State Park"
+          "\u00c1rea ML Auto 6"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.133550"
+        "timestamp": "2025-10-05T17:32:33.024062"
       },
       "geometry": {
         "type": "Polygon",
@@ -7560,24 +7566,25 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_6_144001",
+        "id": "ml_auto_6_173233",
         "Site": "\u00c1rea ML Auto 7",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 1089268.4631139673,
-        "point_count": 31,
+        "point_count": 35,
         "user_points": 0,
         "sources": [
           "combined_polygon",
           "combined_multipolygon"
         ],
         "original_polygons_involved": [
-          "Red Hills Recreational Managment Area",
-          "\u00c1rea ML 7"
+          "\u00c1rea ML 7",
+          "\u00c1rea ML Auto 7",
+          "Red Hills Recreational Managment Area"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.133762"
+        "timestamp": "2025-10-05T17:32:33.024278"
       },
       "geometry": {
         "type": "Polygon",
@@ -7606,12 +7613,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_7_144001",
+        "id": "ml_auto_7_173233",
         "Site": "\u00c1rea ML Auto 8",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 5472013.50033356,
-        "point_count": 31,
+        "point_count": 35,
         "user_points": 0,
         "sources": [
           "combined_polygon",
@@ -7619,11 +7626,12 @@
         ],
         "original_polygons_involved": [
           "Jepson Prairie Preserve",
-          "\u00c1rea ML 8"
+          "\u00c1rea ML 8",
+          "\u00c1rea ML Auto 8"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.134037"
+        "timestamp": "2025-10-05T17:32:33.024539"
       },
       "geometry": {
         "type": "Polygon",
@@ -7652,24 +7660,25 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_8_144001",
+        "id": "ml_auto_8_173233",
         "Site": "\u00c1rea ML Auto 9",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 3592968.13981382,
-        "point_count": 31,
+        "point_count": 35,
         "user_points": 0,
         "sources": [
           "combined_polygon",
           "combined_multipolygon"
         ],
         "original_polygons_involved": [
+          "\u00c1rea ML Auto 9",
           "Jepson Prairie Preserve",
           "\u00c1rea ML 9"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.134283"
+        "timestamp": "2025-10-05T17:32:33.024758"
       },
       "geometry": {
         "type": "Polygon",
@@ -7698,12 +7707,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_11_144001",
+        "id": "ml_auto_11_173233",
         "Site": "\u00c1rea ML Auto 12",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 61691521.53268374,
-        "point_count": 72,
+        "point_count": 81,
         "user_points": 0,
         "sources": [
           "combined_polygon",
@@ -7711,11 +7720,12 @@
         ],
         "original_polygons_involved": [
           "\u00c1rea ML 12",
+          "\u00c1rea ML Auto 12",
           "Picacho Peak State Park"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.134703"
+        "timestamp": "2025-10-05T17:32:33.025251"
       },
       "geometry": {
         "type": "Polygon",
@@ -7764,12 +7774,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_12_144001",
+        "id": "ml_auto_12_173233",
         "Site": "\u00c1rea ML Auto 13",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 6068113.010357592,
-        "point_count": 32,
+        "point_count": 36,
         "user_points": 0,
         "sources": [
           "combined_polygon",
@@ -7777,11 +7787,12 @@
         ],
         "original_polygons_involved": [
           "\u00c1rea ML 13",
+          "\u00c1rea ML Auto 13",
           "South Mountain Park and Preserve"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.134947"
+        "timestamp": "2025-10-05T17:32:33.025462"
       },
       "geometry": {
         "type": "Polygon",
@@ -7810,24 +7821,25 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_13_144001",
+        "id": "ml_auto_13_173233",
         "Site": "\u00c1rea ML Auto 14",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 32174761.42125952,
-        "point_count": 83,
+        "point_count": 93,
         "user_points": 0,
         "sources": [
           "combined_polygon",
           "combined_multipolygon"
         ],
         "original_polygons_involved": [
-          "\u00c1rea ML 14",
-          "Lompoc Flower Fields"
+          "Lompoc Flower Fields",
+          "\u00c1rea ML Auto 14",
+          "\u00c1rea ML 14"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.135477"
+        "timestamp": "2025-10-05T17:32:33.026087"
       },
       "geometry": {
         "type": "Polygon",
@@ -7880,24 +7892,25 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_14_144001",
+        "id": "ml_auto_14_173233",
         "Site": "\u00c1rea ML Auto 15",
         "Type": "ML Generated",
         "Season": "Variable",
         "Area": 718202.0966092751,
-        "point_count": 69,
+        "point_count": 77,
         "user_points": 0,
         "sources": [
           "combined_polygon",
           "combined_multipolygon"
         ],
         "original_polygons_involved": [
-          "\u00c1rea ML 15",
-          "Carlsbad Ranch"
+          "\u00c1rea ML Auto 15",
+          "Carlsbad Ranch",
+          "\u00c1rea ML 15"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.135776"
+        "timestamp": "2025-10-05T17:32:33.026418"
       },
       "geometry": {
         "type": "Polygon",
@@ -7942,72 +7955,25 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "ml_auto_15_144001",
+        "id": "ml_auto_15_173233",
         "Site": "\u00c1rea ML Auto 16",
         "Type": "ML Generated",
         "Season": "Variable",
-        "Area": 3303572.2437514323,
-        "point_count": 38,
-        "user_points": 4,
+        "Area": 34307215.91075576,
+        "point_count": 60,
+        "user_points": 9,
         "sources": [
-          "combined_polygon",
-          "user"
+          "user",
+          "combined_polygon"
         ],
         "original_polygons_involved": [
+          "\u00c1rea ML Auto 16",
+          "\u00c1rea ML 17",
           "\u00c1rea ML 16"
         ],
         "generated_auto": true,
         "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.135991"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -103.19953,
-              20.73349
-            ],
-            [
-              -103.198312,
-              20.745536
-            ],
-            [
-              -103.168437,
-              20.749067
-            ],
-            [
-              -103.181829,
-              20.736547
-            ],
-            [
-              -103.19953,
-              20.73349
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "ml_auto_16_144001",
-        "Site": "\u00c1rea ML Auto 17",
-        "Type": "ML Generated",
-        "Season": "Variable",
-        "Area": 1762525.5398502303,
-        "point_count": 14,
-        "user_points": 4,
-        "sources": [
-          "combined_polygon",
-          "user"
-        ],
-        "original_polygons_involved": [
-          "\u00c1rea ML 17"
-        ],
-        "generated_auto": true,
-        "auto_generated": true,
-        "timestamp": "2025-10-05T14:40:01.136162"
+        "timestamp": "2025-10-05T17:32:33.026660"
       },
       "geometry": {
         "type": "Polygon",
@@ -8022,8 +7988,16 @@
               20.748572
             ],
             [
-              -103.279885,
-              20.720399
+              -103.168437,
+              20.749067
+            ],
+            [
+              -103.181829,
+              20.736547
+            ],
+            [
+              -103.239185,
+              20.72
             ],
             [
               -103.283748,
