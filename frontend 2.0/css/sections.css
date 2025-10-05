@@ -3,10 +3,11 @@
 /* =============================== */
 
 .intro {
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
     text-align: center;
     background: var(--color-blanco-calido);
     position: relative;
+    padding-bottom: 2rem
 }
 
 .intro::before {
@@ -51,7 +52,7 @@
     line-height: 1.8;
     color: var(--texto-secundario);
     max-width: 800px;
-    margin: 3rem auto 4rem;
+    margin:2rem auto 2rem;
     position: relative;
     z-index: 2;
 }
@@ -76,10 +77,11 @@
 /* =============================== */
 
 .features {
-    padding: 6rem 2rem;
+    padding: 3.5rem 2rem 5rem;
     background: var(--fondo-principal);
     text-align: center;
     position: relative;
+    padding-top: 2rem;
 }
 
 .features::before {
@@ -98,7 +100,7 @@
     font-size: 3rem;
     font-weight: 800;
     color: var(--texto-principal);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     letter-spacing: -0.3px;
     text-transform: uppercase;
     position: relative;
