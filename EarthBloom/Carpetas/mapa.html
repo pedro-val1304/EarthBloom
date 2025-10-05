@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthBloom | Mapa de Floración</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="fade-in">
+    <div class="main-content">
+        <header class="header">
+            <a href="index.html" class="logo">
+                <span class="logo-main">EarthBloom</span>
+                <span class="logo-sub">NASA</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <a href="index.html">Inicio</a>
+                <a href="flores.html">Flores</a>
+                <a href="mapa.html" class="active">Mapa</a>
+                <a href="registro.html">Registro</a>
+            </nav>
+        </header>
+
+        <section class="intro">
+            <h2>Mapa de Floración</h2>
+            <p>Monitoreo en tiempo real de las zonas de floración en México utilizando datos satelitales de la NASA.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-card" style="max-width: 900px; margin: 0 auto;">
+                <div id="map" style="height: 500px; width: 100%; border-radius: 8px;"></div>
+                <div style="margin-top: 2rem;">
+                    <h3>Zonas de Monitoreo Activo</h3>
+                    <p>El sistema EarthBloom rastrea los patrones de floración en las principales regiones ecológicas de México, identificando cambios estacionales y patrones de crecimiento mediante análisis de vegetación NDVI.</p>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                        <div style="background: rgba(234, 254, 7, 0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid #eac54f;">
+                            <h4 style="color: #eac54f; margin: 0 0 0.5rem 0;">Valle de México</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">Floración primaveral activa - Dalias y Rosas</p>
+                        </div>
+                        <div style="background: rgba(138, 155, 110, 0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid #8a9b6e;">
+                            <h4 style="color: #8a9b6e; margin: 0 0 0.5rem 0;">Chiapas</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">Floración tropical permanente - Orquídeas</p>
+                        </div>
+                        <div style="background: rgba(196, 164, 163, 0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid #c4a4a3;">
+                            <h4 style="color: #c4a4a3; margin: 0 0 0.5rem 0;">Puebla</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">Cempasúchil en desarrollo - 45% progreso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 EarthBloom – Mapeando la vida natural con tecnología espacial</p>
+        <div class="nasa-badge">NASA Space Apps Challenge 2025</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI&callback=iniciaMapa"></script>
+</body>
+</html>
