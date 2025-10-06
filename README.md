@@ -78,8 +78,9 @@ Pasos (Fork recomendado)
      git clone git@github.com:TU_USUARIO/EarthBloom.git
      ```
 2. Abre la carpeta en VS Code.  
-3. Instala/activa Live Server.  
-4. Clic derecho en `index.html` → Open with Live Server.
+3. Instala Live Server.
+4. Abre un servidor local corriendo el archivo backend de python.  
+5. Clic derecho en `index.html` → Open with Live Server.
 
 Páginas clave
 - `index.html` → Landing page.  
@@ -148,8 +149,9 @@ Steps (Fork recommended)
      git clone git@github.com:YOUR_USER/EarthBloom.git
      ```
 2. Open the folder in VS Code.  
-3. Install/enable Live Server.  
-4. Right‑click `index.html` → Open with Live Server.
+3. Install Live Server.
+4. Open a local server running the backend python file  
+5. Right‑click `index.html` → Open with Live Server.
 
 Key pages
 - `index.html` → Landing page.  
