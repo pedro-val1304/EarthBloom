@@ -360,7 +360,7 @@
         // Cargar polígonos originales desde la base de datos combinada
         async function loadOriginalPolygons() {
             try {
-                const response = await fetch('/api/original-polygons');
+                const response = await fetch('http://127.0.0.1:5000/api/original-polygons');
                 const data = await response.json();
                 
                 if (originalLayer) {
@@ -401,7 +401,7 @@
         // Cargar polígonos ML desde la base de datos combinada
         async function loadMLPolygons() {
             try {
-                const response = await fetch('/api/ml-polygons');
+                const response = await fetch('http://127.0.0.1:5000/api/ml-polygons');
                 const data = await response.json();
                 
                 if (mlLayer) {
@@ -447,7 +447,8 @@
         // Cargar puntos de usuario
         async function loadUserPoints() {
             try {
-                const response = await fetch('/api/user-points');
+                const response = await fetch('http://127.0.0.1:5000/api/user-points');
+
                 userPoints = await response.json();
                 
                 userPointsLayer.clearLayers();
@@ -483,7 +484,8 @@
         // Cargar vértices ML como puntos visibles
         async function loadMLVertices() {
             try {
-                const response = await fetch('/api/ml-vertices');
+                const response = await fetch('http://127.0.0.1:5000/api/ml-vertices');
+
                 mlVertices = await response.json();
                 
                 mlVerticesLayer.clearLayers();
@@ -515,7 +517,7 @@
         // Cargar explicación del ML
         async function loadMLExplanation() {
             try {
-                const response = await fetch('/api/ml-explanation');
+                const response = await fetch('http://127.0.0.1:5000/api/ml-explanation');
                 const explanation = await response.json();
                 
                 const content = document.getElementById('ml-explanation-content');
@@ -578,7 +580,7 @@
             }
             
             try {
-                const response = await fetch('/api/add-user-point', {
+                    const response = await fetch('http://127.0.0.1:5000/api/add-user-point', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -630,7 +632,7 @@
         // Generar polígonos ML desde la base de datos combinada
         async function generateMLPolygons() {
             try {
-                const response = await fetch('/api/generate-ml-polygons', {
+                    const response = await fetch('http://127.0.0.1:5000/api/generate-ml-polygons', {
                     method: 'POST'
                 });
                 
@@ -661,7 +663,7 @@
             }
             
             try {
-                const response = await fetch('/api/heatmap-data');
+                const response = await fetch('http://127.0.0.1:5000/api/heatmap-data');
                 const data = await response.json();
                 
                 const heatPoints = data.heatmap_data.map(point => [
@@ -772,7 +774,7 @@
         }
 
         function exportData() {
-            window.open('/api/export-combined', '_blank');
+            window.open('http://127.0.0.1:5000/api/export-combined', '_blank');
         }
 
         // Limpiar puntos de usuario (función placeholder)
@@ -786,7 +788,7 @@
         async function resetDatabase() {
             if (confirm('⚠️ ¿Estás seguro de que quieres resetear la base de datos completa? Se perderán todos los polígonos ML y puntos de usuario.')) {
                 try {
-                    const response = await fetch('/api/reset-database', {
+                        const response = await fetch('http://127.0.0.1:5000/api/reset-database', {
                         method: 'POST'
                     });
                     
