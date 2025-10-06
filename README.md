@@ -1,7 +1,7 @@
 ### EarthBloom (ES/EN)
 
 <p align="center">
-  <img href="https://cdn.abacus.ai/images/1a828090-01be-428a-a51a-f6ee84559d4c.png" alt="EarthBloom" width="100%">
+  <img src="https://cdn.abacus.ai/images/1a828090-01be-428a-a51a-f6ee84559d4c.png" alt="EarthBloom" width="100%">
 </p>
 
 <p align="center">
@@ -12,9 +12,9 @@
 </p>
 
 <p align="center">
-  <img src="images/logo_1.png" alt="EarthBloom Logo" height="64">
+  <img href="images/logo_1.png" alt="EarthBloom Logo" height="64">
   &nbsp;&nbsp;
-  <img src="images/nasa.png" alt="NASA Space Apps Challenge" height="64">
+  <img href="images/nasa.png" alt="NASA Space Apps Challenge" height="64">
 </p>
 
 ---
