@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "ml_vertex_0_215317",
+    "lng": -117.75436936015217,
+    "lat": 33.89212056869477,
+    "source_polygon": "\u00c1rea ML Auto 1",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924329"
+  },
+  {
+    "id": "ml_vertex_1_215317",
+    "lng": -117.6697478244772,
+    "lat": 33.942047274743004,
+    "source_polygon": "\u00c1rea ML Auto 1",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924344"
+  },
+  {
+    "id": "ml_vertex_2_215317",
+    "lng": -117.64901554823683,
+    "lat": 33.912006629578386,
+    "source_polygon": "\u00c1rea ML Auto 1",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924353"
+  },
+  {
+    "id": "ml_vertex_3_215317",
+    "lng": -117.64309204073959,
+    "lat": 33.8815428767354,
+    "source_polygon": "\u00c1rea ML Auto 1",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924361"
+  },
+  {
+    "id": "ml_vertex_4_215317",
+    "lng": -117.65152,
+    "lat": 33.869285,
+    "source_polygon": "\u00c1rea ML Auto 1",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924369"
+  },
+  {
+    "id": "ml_vertex_5_215317",
+    "lng": -117.68286416250682,
+    "lat": 33.87223450781116,
+    "source_polygon": "\u00c1rea ML Auto 1",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924376"
+  },
+  {
+    "id": "ml_vertex_6_215317",
+    "lng": -117.75436936015217,
+    "lat": 33.89212056869477,
+    "source_polygon": "\u00c1rea ML Auto 1",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924384"
+  },
+  {
+    "id": "ml_vertex_7_215317",
+    "lng": -117.9303821543561,
+    "lat": 33.95262496670237,
+    "source_polygon": "\u00c1rea ML Auto 2",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924393"
+  },
+  {
+    "id": "ml_vertex_8_215317",
+    "lng": -117.92995904667772,
+    "lat": 33.97928075043999,
+    "source_polygon": "\u00c1rea ML Auto 2",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924400"
+  },
+  {
+    "id": "ml_vertex_9_215317",
+    "lng": -117.90711123204548,
+    "lat": 33.94247038242138,
+    "source_polygon": "\u00c1rea ML Auto 2",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924408"
+  },
+  {
+    "id": "ml_vertex_10_215317",
+    "lng": -117.9303821543561,
+    "lat": 33.95262496670237,
+    "source_polygon": "\u00c1rea ML Auto 2",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924416"
+  },
+  {
+    "id": "ml_vertex_11_215317",
+    "lng": -119.84307333553708,
+    "lat": 34.90060982269712,
+    "source_polygon": "\u00c1rea ML Auto 3",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924425"
+  },
+  {
+    "id": "ml_vertex_12_215317",
+    "lng": -119.76567944673165,
+    "lat": 34.859945237053594,
+    "source_polygon": "\u00c1rea ML Auto 3",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924432"
+  },
+  {
+    "id": "ml_vertex_13_215317",
+    "lng": -119.80503227154797,
+    "lat": 34.87830988863454,
+    "source_polygon": "\u00c1rea ML Auto 3",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924440"
+  },
+  {
+    "id": "ml_vertex_14_215317",
+    "lng": -119.84307333553708,
+    "lat": 34.90060982269712,
+    "source_polygon": "\u00c1rea ML Auto 3",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924447"
+  },
+  {
+    "id": "ml_vertex_15_215317",
+    "lng": -120.5055705284248,
+    "lat": 34.51029550507819,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924456"
+  },
+  {
+    "id": "ml_vertex_16_215317",
+    "lng": -120.47770602874252,
+    "lat": 34.56182574421665,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924463"
+  },
+  {
+    "id": "ml_vertex_17_215317",
+    "lng": -120.46129269331323,
+    "lat": 34.56678791539294,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924471"
+  },
+  {
+    "id": "ml_vertex_18_215317",
+    "lng": -120.43533672100645,
+    "lat": 34.56297086064195,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924478"
+  },
+  {
+    "id": "ml_vertex_19_215317",
+    "lng": -120.3857150092435,
+    "lat": 34.53434295000947,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924486"
+  },
+  {
+    "id": "ml_vertex_20_215317",
+    "lng": -120.3899137694696,
+    "lat": 34.52136496385608,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924493"
+  },
+  {
+    "id": "ml_vertex_21_215317",
+    "lng": -120.44411594693375,
+    "lat": 34.44540557431125,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924500"
+  },
+  {
+    "id": "ml_vertex_22_215317",
+    "lng": -120.45098664548554,
+    "lat": 34.43853487575946,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924508"
+  },
+  {
+    "id": "ml_vertex_23_215317",
+    "lng": -120.46778168638993,
+    "lat": 34.44044340313496,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924515"
+  },
+  {
+    "id": "ml_vertex_24_215317",
+    "lng": -120.47617920684212,
+    "lat": 34.44998604001245,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924529"
+  },
+  {
+    "id": "ml_vertex_25_215317",
+    "lng": -120.4994632408232,
+    "lat": 34.496172402499504,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924537"
+  },
+  {
+    "id": "ml_vertex_26_215317",
+    "lng": -120.5055705284248,
+    "lat": 34.51029550507819,
+    "source_polygon": "\u00c1rea ML Auto 4",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924544"
+  },
+  {
+    "id": "ml_vertex_27_215317",
+    "lng": -120.08407217512098,
+    "lat": 34.705424697647864,
+    "source_polygon": "\u00c1rea ML Auto 5",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924552"
+  },
+  {
+    "id": "ml_vertex_28_215317",
+    "lng": -120.08074840234333,
+    "lat": 34.74115525500761,
+    "source_polygon": "\u00c1rea ML Auto 5",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924560"
+  },
+  {
+    "id": "ml_vertex_29_215317",
+    "lng": -120.05540463491374,
+    "lat": 34.75860506209028,
+    "source_polygon": "\u00c1rea ML Auto 5",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924568"
+  },
+  {
+    "id": "ml_vertex_30_215317",
+    "lng": -120.0138574751931,
+    "lat": 34.76109789167352,
+    "source_polygon": "\u00c1rea ML Auto 5",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924575"
+  },
+  {
+    "id": "ml_vertex_31_215317",
+    "lng": -119.88559457128075,
+    "lat": 34.742841461154875,
+    "source_polygon": "\u00c1rea ML Auto 5",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924583"
+  },
+  {
+    "id": "ml_vertex_32_215317",
+    "lng": -119.90276559659867,
+    "lat": 34.68151637073371,
+    "source_polygon": "\u00c1rea ML Auto 5",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924591"
+  },
+  {
+    "id": "ml_vertex_33_215317",
+    "lng": -120.03546199824784,
+    "lat": 34.659722821955164,
+    "source_polygon": "\u00c1rea ML Auto 5",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924598"
+  },
+  {
+    "id": "ml_vertex_34_215317",
+    "lng": -120.05872840769139,
+    "lat": 34.66429300952443,
+    "source_polygon": "\u00c1rea ML Auto 5",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924606"
+  },
+  {
+    "id": "ml_vertex_35_215317",
+    "lng": -120.07451632838523,
+    "lat": 34.67924998702386,
+    "source_polygon": "\u00c1rea ML Auto 5",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924613"
+  },
+  {
+    "id": "ml_vertex_36_215317",
+    "lng": -120.08407217512098,
+    "lat": 34.705424697647864,
+    "source_polygon": "\u00c1rea ML Auto 5",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924621"
+  },
+  {
+    "id": "ml_vertex_37_215317",
+    "lng": -120.89999237161952,
+    "lat": 35.259901498305894,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924630"
+  },
+  {
+    "id": "ml_vertex_38_215317",
+    "lng": -120.89382248596631,
+    "lat": 35.26583408066473,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924636"
+  },
+  {
+    "id": "ml_vertex_39_215317",
+    "lng": -120.88029619818816,
+    "lat": 35.2665459905478,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924644"
+  },
+  {
+    "id": "ml_vertex_40_215317",
+    "lng": -120.72438793379777,
+    "lat": 35.19037163306025,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924651"
+  },
+  {
+    "id": "ml_vertex_41_215317",
+    "lng": -120.72225220414859,
+    "lat": 35.17993028810869,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924659"
+  },
+  {
+    "id": "ml_vertex_42_215317",
+    "lng": -120.75428814888633,
+    "lat": 35.160471417971685,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924666"
+  },
+  {
+    "id": "ml_vertex_43_215317",
+    "lng": -120.76211915760001,
+    "lat": 35.15975950808863,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924673"
+  },
+  {
+    "id": "ml_vertex_44_215317",
+    "lng": -120.77208589596286,
+    "lat": 35.162132541032165,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924680"
+  },
+  {
+    "id": "ml_vertex_45_215317",
+    "lng": -120.86676991041,
+    "lat": 35.21339005261257,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924687"
+  },
+  {
+    "id": "ml_vertex_46_215317",
+    "lng": -120.89405978926067,
+    "lat": 35.23925611169712,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924694"
+  },
+  {
+    "id": "ml_vertex_47_215317",
+    "lng": -120.89999237161952,
+    "lat": 35.259901498305894,
+    "source_polygon": "\u00c1rea ML Auto 6",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924701"
+  },
+  {
+    "id": "ml_vertex_48_215317",
+    "lng": -120.57698744449144,
+    "lat": 37.88127927485645,
+    "source_polygon": "\u00c1rea ML Auto 7",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924709"
+  },
+  {
+    "id": "ml_vertex_49_215317",
+    "lng": -120.57628070744957,
+    "lat": 37.921563286242886,
+    "source_polygon": "\u00c1rea ML Auto 7",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924716"
+  },
+  {
+    "id": "ml_vertex_50_215317",
+    "lng": -120.57345375928209,
+    "lat": 37.83251441896761,
+    "source_polygon": "\u00c1rea ML Auto 7",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924723"
+  },
+  {
+    "id": "ml_vertex_51_215317",
+    "lng": -120.57698744449144,
+    "lat": 37.88127927485645,
+    "source_polygon": "\u00c1rea ML Auto 7",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924730"
+  },
+  {
+    "id": "ml_vertex_52_215317",
+    "lng": -121.79016752110661,
+    "lat": 38.22574720349427,
+    "source_polygon": "\u00c1rea ML Auto 8",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924738"
+  },
+  {
+    "id": "ml_vertex_53_215317",
+    "lng": -121.75429739658767,
+    "lat": 38.255268633408086,
+    "source_polygon": "\u00c1rea ML Auto 8",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924746"
+  },
+  {
+    "id": "ml_vertex_54_215317",
+    "lng": -121.75969378700202,
+    "lat": 38.22606463822453,
+    "source_polygon": "\u00c1rea ML Auto 8",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924753"
+  },
+  {
+    "id": "ml_vertex_55_215317",
+    "lng": -121.79016752110661,
+    "lat": 38.22574720349427,
+    "source_polygon": "\u00c1rea ML Auto 8",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924760"
+  },
+  {
+    "id": "ml_vertex_56_215317",
+    "lng": -121.89365124317007,
+    "lat": 38.27082293519063,
+    "source_polygon": "\u00c1rea ML Auto 9",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924768"
+  },
+  {
+    "id": "ml_vertex_57_215317",
+    "lng": -121.88381076653212,
+    "lat": 38.30891510282135,
+    "source_polygon": "\u00c1rea ML Auto 9",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924774"
+  },
+  {
+    "id": "ml_vertex_58_215317",
+    "lng": -121.89047689586751,
+    "lat": 38.223842595112735,
+    "source_polygon": "\u00c1rea ML Auto 9",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924781"
+  },
+  {
+    "id": "ml_vertex_59_215317",
+    "lng": -121.89365124317007,
+    "lat": 38.27082293519063,
+    "source_polygon": "\u00c1rea ML Auto 9",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924789"
+  },
+  {
+    "id": "ml_vertex_60_215317",
+    "lng": -111.46358382568792,
+    "lat": 32.66660335310684,
+    "source_polygon": "\u00c1rea ML Auto 12",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924796"
+  },
+  {
+    "id": "ml_vertex_61_215317",
+    "lng": -111.42376059346306,
+    "lat": 32.66464883864181,
+    "source_polygon": "\u00c1rea ML Auto 12",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924804"
+  },
+  {
+    "id": "ml_vertex_62_215317",
+    "lng": -111.38662481862761,
+    "lat": 32.65414332339231,
+    "source_polygon": "\u00c1rea ML Auto 12",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924811"
+  },
+  {
+    "id": "ml_vertex_63_215317",
+    "lng": -111.36952281705865,
+    "lat": 32.62946757827139,
+    "source_polygon": "\u00c1rea ML Auto 12",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924819"
+  },
+  {
+    "id": "ml_vertex_64_215317",
+    "lng": -111.37587498906997,
+    "lat": 32.603081632993565,
+    "source_polygon": "\u00c1rea ML Auto 12",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924826"
+  },
+  {
+    "id": "ml_vertex_65_215317",
+    "lng": -111.4110562494404,
+    "lat": 32.59648514667411,
+    "source_polygon": "\u00c1rea ML Auto 12",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924834"
+  },
+  {
+    "id": "ml_vertex_66_215317",
+    "lng": -111.44501593827019,
+    "lat": 32.60528046176672,
+    "source_polygon": "\u00c1rea ML Auto 12",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924841"
+  },
+  {
+    "id": "ml_vertex_67_215317",
+    "lng": -111.46138499691476,
+    "lat": 32.63068914981203,
+    "source_polygon": "\u00c1rea ML Auto 12",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924849"
+  },
+  {
+    "id": "ml_vertex_68_215317",
+    "lng": -111.46358382568792,
+    "lat": 32.66660335310684,
+    "source_polygon": "\u00c1rea ML Auto 12",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924856"
+  },
+  {
+    "id": "ml_vertex_69_215317",
+    "lng": -112.09488643988851,
+    "lat": 33.35555563711866,
+    "source_polygon": "\u00c1rea ML Auto 13",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924864"
+  },
+  {
+    "id": "ml_vertex_70_215317",
+    "lng": -112.0658285728625,
+    "lat": 33.35715515273478,
+    "source_polygon": "\u00c1rea ML Auto 13",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924871"
+  },
+  {
+    "id": "ml_vertex_71_215317",
+    "lng": -112.03117240118009,
+    "lat": 33.325164840412555,
+    "source_polygon": "\u00c1rea ML Auto 13",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924878"
+  },
+  {
+    "id": "ml_vertex_72_215317",
+    "lng": -112.09488643988851,
+    "lat": 33.35555563711866,
+    "source_polygon": "\u00c1rea ML Auto 13",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924886"
+  },
+  {
+    "id": "ml_vertex_73_215317",
+    "lng": -120.56236349991121,
+    "lat": 34.6691134574361,
+    "source_polygon": "\u00c1rea ML Auto 14",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924894"
+  },
+  {
+    "id": "ml_vertex_74_215317",
+    "lng": -120.55371791094417,
+    "lat": 34.67671740917819,
+    "source_polygon": "\u00c1rea ML Auto 14",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924901"
+  },
+  {
+    "id": "ml_vertex_75_215317",
+    "lng": -120.54257239263727,
+    "lat": 34.67963399340803,
+    "source_polygon": "\u00c1rea ML Auto 14",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924909"
+  },
+  {
+    "id": "ml_vertex_76_215317",
+    "lng": -120.52319794025331,
+    "lat": 34.68046730318799,
+    "source_polygon": "\u00c1rea ML Auto 14",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924919"
+  },
+  {
+    "id": "ml_vertex_77_215317",
+    "lng": -120.47840753958072,
+    "lat": 34.66463441736884,
+    "source_polygon": "\u00c1rea ML Auto 14",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924927"
+  },
+  {
+    "id": "ml_vertex_78_215317",
+    "lng": -120.47882419447069,
+    "lat": 34.63380195551049,
+    "source_polygon": "\u00c1rea ML Auto 14",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924934"
+  },
+  {
+    "id": "ml_vertex_79_215317",
+    "lng": -120.50267768692191,
+    "lat": 34.63598939368288,
+    "source_polygon": "\u00c1rea ML Auto 14",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924942"
+  },
+  {
+    "id": "ml_vertex_80_215317",
+    "lng": -120.52580203331567,
+    "lat": 34.640051778860155,
+    "source_polygon": "\u00c1rea ML Auto 14",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924950"
+  },
+  {
+    "id": "ml_vertex_81_215317",
+    "lng": -120.53882249862747,
+    "lat": 34.64838487665971,
+    "source_polygon": "\u00c1rea ML Auto 14",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924957"
+  },
+  {
+    "id": "ml_vertex_82_215317",
+    "lng": -120.56236349991121,
+    "lat": 34.6691134574361,
+    "source_polygon": "\u00c1rea ML Auto 14",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924964"
+  },
+  {
+    "id": "ml_vertex_83_215317",
+    "lng": -117.32370709782457,
+    "lat": 33.1335956677159,
+    "source_polygon": "\u00c1rea ML Auto 15",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924971"
+  },
+  {
+    "id": "ml_vertex_84_215317",
+    "lng": -117.32290817225987,
+    "lat": 33.13503888809081,
+    "source_polygon": "\u00c1rea ML Auto 15",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924979"
+  },
+  {
+    "id": "ml_vertex_85_215317",
+    "lng": -117.31948052386946,
+    "lat": 33.13440747917679,
+    "source_polygon": "\u00c1rea ML Auto 15",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924987"
+  },
+  {
+    "id": "ml_vertex_86_215317",
+    "lng": -117.3134241526533,
+    "lat": 33.12385393018522,
+    "source_polygon": "\u00c1rea ML Auto 15",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.924994"
+  },
+  {
+    "id": "ml_vertex_87_215317",
+    "lng": -117.3137334141622,
+    "lat": 33.122075676508985,
+    "source_polygon": "\u00c1rea ML Auto 15",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925001"
+  },
+  {
+    "id": "ml_vertex_88_215317",
+    "lng": -117.31669717028926,
+    "lat": 33.1223978239141,
+    "source_polygon": "\u00c1rea ML Auto 15",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925008"
+  },
+  {
+    "id": "ml_vertex_89_215317",
+    "lng": -117.31945475207705,
+    "lat": 33.1254646672108,
+    "source_polygon": "\u00c1rea ML Auto 15",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925015"
+  },
+  {
+    "id": "ml_vertex_90_215317",
+    "lng": -117.32370709782457,
+    "lat": 33.1335956677159,
+    "source_polygon": "\u00c1rea ML Auto 15",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925023"
+  },
+  {
+    "id": "ml_vertex_91_215317",
+    "lng": -103.287871,
+    "lat": 20.719919,
+    "source_polygon": "\u00c1rea ML Auto 16",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925031"
+  },
+  {
+    "id": "ml_vertex_92_215317",
+    "lng": -103.284186,
+    "lat": 20.748572,
+    "source_polygon": "\u00c1rea ML Auto 16",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925039"
+  },
+  {
+    "id": "ml_vertex_93_215317",
+    "lng": -103.168437,
+    "lat": 20.749067,
+    "source_polygon": "\u00c1rea ML Auto 16",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925047"
+  },
+  {
+    "id": "ml_vertex_94_215317",
+    "lng": -103.181829,
+    "lat": 20.736547,
+    "source_polygon": "\u00c1rea ML Auto 16",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925054"
+  },
+  {
+    "id": "ml_vertex_95_215317",
+    "lng": -103.239185,
+    "lat": 20.72,
+    "source_polygon": "\u00c1rea ML Auto 16",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925061"
+  },
+  {
+    "id": "ml_vertex_96_215317",
+    "lng": -103.283748,
+    "lat": 20.712773,
+    "source_polygon": "\u00c1rea ML Auto 16",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925069"
+  },
+  {
+    "id": "ml_vertex_97_215317",
+    "lng": -103.287871,
+    "lat": 20.719919,
+    "source_polygon": "\u00c1rea ML Auto 16",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925076"
+  },
+  {
+    "id": "ml_vertex_98_215317",
+    "lng": -103.523741,
+    "lat": 20.565945,
+    "source_polygon": "\u00c1rea ML Auto 17",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925084"
+  },
+  {
+    "id": "ml_vertex_99_215317",
+    "lng": -103.521595,
+    "lat": 20.572413,
+    "source_polygon": "\u00c1rea ML Auto 17",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925091"
+  },
+  {
+    "id": "ml_vertex_100_215317",
+    "lng": -103.516273,
+    "lat": 20.567414,
+    "source_polygon": "\u00c1rea ML Auto 17",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925098"
+  },
+  {
+    "id": "ml_vertex_101_215317",
+    "lng": -103.523741,
+    "lat": 20.565945,
+    "source_polygon": "\u00c1rea ML Auto 17",
+    "type": "ML Vertex",
+    "season": "Auto-generated",
+    "area": 0,
+    "timestamp": "2025-10-05T21:53:17.925105"
+  }
+]
