@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template, request, jsonify, send_file
+from flask_cors import CORS  # <- Añade este import
 import json
 import numpy as np
 from datetime import datetime
@@ -12,7 +13,7 @@ from math import radians
 
 app = Flask(__name__)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
+CORS(app, origins=["http://127.0.0.1:5500", "http://127.0.0.1:5000"])
 
 class WildflowerMLSystem:
     def __init__(self):
