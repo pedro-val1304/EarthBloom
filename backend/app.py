@@ -1,6 +1,6 @@
+import os
 from flask import Flask, render_template, request, jsonify, send_file
 import json
-import os
 import numpy as np
 from datetime import datetime
 from sklearn.cluster import DBSCAN
@@ -11,14 +11,16 @@ import shutil
 from math import radians
 
 app = Flask(__name__)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 class WildflowerMLSystem:
     def __init__(self):
-        self.primary_geojson = 'WildflowerBlooms_AreaOfInterest.geojson'
-        self.combined_geojson = 'WildflowerBlooms_Combined.geojson'
-        self.user_points_file = 'user_points.json'
-        self.ml_vertices_file = 'ml_vertices.json'
+        # Usar rutas absolutas basadas en la ubicación del script
+        self.primary_geojson = os.path.join(BASE_DIR, 'WildflowerBlooms_AreaOfInterest.geojson')
+        self.combined_geojson = os.path.join(BASE_DIR, 'WildflowerBlooms_Combined.geojson')
+        self.user_points_file = os.path.join(BASE_DIR, 'user_points.json')
+        self.ml_vertices_file = os.path.join(BASE_DIR, 'ml_vertices.json')
         
         # Inicializar la base de datos combinada
         self.initialize_combined_database()
@@ -31,15 +33,22 @@ class WildflowerMLSystem:
         """Inicializa la base de datos combinada con los datos originales si no existe"""
         if not os.path.exists(self.combined_geojson):
             try:
-                # Copiar los datos originales a la base de datos combinada
-                shutil.copyfile(self.primary_geojson, self.combined_geojson)
-                print("✅ Base de datos combinada creada a partir de datos originales")
+                # Verificar que el archivo original existe
+                if os.path.exists(self.primary_geojson):
+                    # Copiar los datos originales a la base de datos combinada
+                    shutil.copyfile(self.primary_geojson, self.combined_geojson)
+                    print("✅ Base de datos combinada creada a partir de datos originales")
+                else:
+                    print(f"❌ Archivo original no encontrado: {self.primary_geojson}")
+                    # Crear una base de datos combinada vacía
+                    with open(self.combined_geojson, 'w', encoding='utf-8') as f:
+                        json.dump({"type": "FeatureCollection", "features": []}, f, indent=2)
             except Exception as e:
                 print(f"❌ Error inicializando base de datos combinada: {e}")
                 # Crear una base de datos combinada vacía
                 with open(self.combined_geojson, 'w', encoding='utf-8') as f:
                     json.dump({"type": "FeatureCollection", "features": []}, f, indent=2)
-    
+                    
     def load_data(self):
         # Cargar ÚNICAMENTE la base de datos combinada
         try:
