@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask, render_template, request, jsonify, send_file
 import json
 import os
@@ -10,6 +9,7 @@ from sklearn.metrics.pairwise import haversine_distances
 import tempfile
 import shutil
 from math import radians
+
 app = Flask(__name__)
 
 
@@ -597,7 +597,7 @@ ml_system = WildflowerMLSystem()
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('plugin.html')
 
 @app.route('/api/combined-data')
 def get_combined_data():
@@ -687,5 +687,4 @@ def reset_database():
 if __name__ == '__main__':
     print("🚀 Inicializando Sistema ML de Wildflowers con EPS Automático...")
     ml_system = WildflowerMLSystem()
-    app.run(debug=True, port=5000) 
-    
+    app.run(debug=True, port=5000)
