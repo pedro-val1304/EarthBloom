@@ -1,43 +1,85 @@
-# README.md — EarthBloom (ES/EN)
+### EarthBloom (ES/EN)
 
-![EarthBloom Logo](images/logo_1.png)  
-![NASA Space Apps Challenge](images/nasa.png)
+<p align="center">
+  <img href="https://cdn.abacus.ai/images/1a828090-01be-428a-a51a-f6ee84559d4c.png" alt="EarthBloom" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/pedro-val1304/EarthBloom"><img src="https://img.shields.io/badge/status-DEMO-blue?style=for-the-badge" alt="Status"></a>
+  <a href="https://github.com/pedro-val1304/EarthBloom/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/pedro-val1304/EarthBloom/issues"><img src="https://img.shields.io/github/issues/pedro-val1304/EarthBloom?style=for-the-badge&color=orange" alt="Issues"></a>
+  <a href="https://github.com/pedro-val1304/EarthBloom/stargazers"><img src="https://img.shields.io/github/stars/pedro-val1304/EarthBloom?style=for-the-badge&color=yellow" alt="Stars"></a>
+  <a href="https://spaceappschallenge.org/"><img src="https://img.shields.io/badge/NASA%20Space%20Apps-2025-0b3d91?style=for-the-badge" alt="NASA Space Apps 2025"></a>
+</p>
+
+<p align="center">
+  <img src="images/logo_1.png" alt="EarthBloom Logo" height="64">
+  &nbsp;&nbsp;
+  <img src="images/nasa.png" alt="NASA Space Apps Challenge" height="64">
+</p>
+
+---
+
+## Tabla de contenidos
+- [Español](#español)
+  - [Descripción](#-earthbloom)
+  - [DEMO](#demo)
+  - [Quick Start](#-quick-start)
+  - [Ejecutar la DEMO localmente](#-ejecutar-la-demo-localmente)
+  - [Arquitectura (DEMO)](#-arquitectura-demo)
+  - [Tecnologías](#tecnologías)
+  - [Equipo](#-equipo)
+  - [Cómo contribuir](#-cómo-contribuir)
+  - [Código de conducta](#-código-de-conducta)
+  - [Licencia](#-licencia)
+  - [Contacto](#contacto)
+- [English](#english)
+  - [Overview](#-overview)
+  - [DEMO](#demo-1)
+  - [Quick Start](#-quick-start-1)
+  - [Run locally](#-run-the-demo-locally)
+  - [Structure (DEMO)](#-structure-demo)
+  - [Technologies](#technologies-front-demo)
+  - [Team](#-team)
+  - [Contributing](#-contributing)
+  - [Code of Conduct](#-code-of-conduct)
+  - [License](#-license)
+  - [Contact](#contact-1)
 
 ---
 
 ## Español
 
-### Descripción
-**EarthBloom** es una plataforma científica desarrollada para el **NASA Space Apps Challenge 2025**. Apoya a investigadores que estudian la fenología vegetal y sus respuestas al cambio climático. Integra **datos satelitales**, **meteorológicos** y **observaciones de campo verificadas** con **modelos espacio-temporales de aprendizaje automático** para generar mapas dinámicos que estiman zonas y periodos potenciales de floración.
+### 🌱 EarthBloom
+EarthBloom es una plataforma científica desarrollada para el NASA Space Apps Challenge 2025. Apoya a investigadores que estudian la fenología vegetal y sus respuestas al cambio climático. Integra datos satelitales, meteorológicos y observaciones de campo verificadas con modelos espacio‑temporales de aprendizaje automático para generar mapas dinámicos que estiman zonas y periodos potenciales de floración.
 
-Beneficios clave:
-- Optimiza campañas de campo enfocando recursos en **áreas de mayor interés ecológico**.
-- **Reduce costos** de muestreo innecesarios.
-- **Aumenta la precisión** de análisis de impacto climático.
+- Enfoque: ciencia abierta, no comercial.
+- Público objetivo: investigadores y organizaciones ambientales.
 
-Estado del proyecto:
-- Este repositorio contiene una **DEMO** basada en front-end estático.
-- Algunas funciones (por ejemplo, **registro para agregar puntos de interés**) aún **no están operativas** y se muestran como vistas o placeholders.
-- El objetivo es **no comercial** y **científico**; buscamos infraestructura confiable para análisis fenológicos predictivos.
+#### Beneficios clave
+- Priorización de campañas de campo en áreas de mayor valor ecológico.
+- Reducción de costos de muestreo redundante.
+- Mayor precisión en el análisis de impacto climático y fenofases.
 
-Documentación incluida:
-- Documento: **EarthBloom_English.docx** con la memoria/justificación científica (introducción, problema, solución, tecnologías, impacto, escalabilidad, equipo y referencias APA).
+#### Estado del proyecto
+- Este repositorio contiene una DEMO basada usando los datos otorgados, siendo un MVP.
+- Algunas funciones (p. ej., registro para agregar puntos de interés) aún no están operativas y se muestran como vistas/placeholder.
+- Documentación incluida: EarthBloom_English.docx 
 
-Trabajos futuros:
-- Integrar **más bases de datos** (HLS, MODIS, VIIRS, estaciones meteorológicas, GBIF/iNaturalist verificado, etc.).
-- **Distinguir especies** con mejores modelos y criterios de **fenofases** para investigación más específica.
-- Habilitar el **registro de observaciones verificadas** (carga de evidencias, revisión ligera por pares, control de calidad).
-- **Descargas reproducibles** (GeoTIFF/CSV) con metadatos estándar (p. ej., Darwin Core), **DOIs** y **versionado**.
+#### Roadmap
+- Integrar más bases de datos (HLS, MODIS, VIIRS, estaciones meteorológicas, GBIF/iNaturalist verificado, etc.).
+- Mejor discriminación por especie y criterios de fenofases.
+- Registro de observaciones verificadas (evidencias, revisión ligera por pares, control de calidad).
+- Descargas reproducibles (GeoTIFF/CSV) con metadatos estándar (Darwin Core), DOIs y versionado.
 
-### Cómo visualizar la DEMO localmente
-Requisitos:
-- **Visual Studio Code**
-- Extensión **Live Server** (Ritwick Dey o equivalente)
-- **Navegador moderno**
+### 🚀 Ejecutar la DEMO localmente
+Requisitos
+- Visual Studio Code
+- Extensión Live Server (Ritwick Dey o equivalente)
+- Navegador moderno
 
-Pasos (Fork recomendado):
-1. Haz **Fork** del repositorio en tu cuenta de GitHub.  
-2. Clona tu fork:
+Pasos (Fork recomendado)
+1. Haz Fork del repositorio y clónalo:
    - HTTPS:
      ```bash
      git clone https://github.com/TU_USUARIO/EarthBloom.git
@@ -46,94 +88,87 @@ Pasos (Fork recomendado):
      ```bash
      git clone git@github.com:TU_USUARIO/EarthBloom.git
      ```
-3. Abre la carpeta del repositorio con **Visual Studio Code**.  
-4. Instala/activa la extensión **Live Server**.  
-5. En el explorador de VS Code, clic derecho sobre `index.html` → **Open with Live Server**.
+2. Abre la carpeta en VS Code.  
+3. Instala/activa Live Server.  
+4. Clic derecho en `index.html` → Open with Live Server.
 
-Páginas clave:
-- `index.html` → Página principal.  
-- `mapa.html` → **DEMO** del mapa/visualización.
+Páginas clave
+- `index.html` → Landing page.  
+- `mapa.html` → DEMO del mapa/visualización.
 
-Si no ves estilos/imágenes:
-- Revisa la estructura de carpetas (`css/`, `images/`) y rutas relativas.  
-- Haz una **recarga dura** del navegador (Ctrl/Cmd+Shift+R).
+Solución de problemas
+- Si no cargan estilos/imágenes: verifica rutas relativas y estructura (`css/`, `images/`) y realiza una recarga dura (Ctrl/Cmd+Shift+R).
 
-### Estructura sugerida
-```
-.
-├─ index.html
-├─ mapa.html
-├─ flores.html
-├─ nuestro_equipo.html
-├─ css/
-│  └─ main.css
-├─ images/
-│  ├─ logo_1.png
-│  └─ nasa.png
-├─ script.js        (si aplica)
-└─ EarthBloom_English.docx
-```
+### Tecnologías
+- HTML, CSS, JavaScript
+- Leaflet + OpenStreetMap (mapa DEMO)
+- GeoJSON (mock/placeholder)
 
-### Tecnologías (Front DEMO)
-- **HTML, CSS, JavaScript**
-- **Leaflet**, **OpenStreetMap** (mapa DEMO)
-- **GeoJSON** (mock/placeholder)
+### 👥 Equipo
+- Héctor Tadeo Cadena Alfaro — Backend  
+- Emiliano Becerra López — Backend  
+- Ángel Gael Álvarez López — Data Analyst  
+- José Pedro Valenzuela López — Frontend  
+- Pedro Daniel Gutiérrez Pérez — Frontend  
+- Daniel Alberto Curiel Vargas — Documentación
 
-### Autores / Equipo (de `nuestro_equipo.html`)
-- **Héctor Tadeo Cadena Alfaro** — Backend  
-- **Emiliano Becerra López** — Líder  
-- **Ángel Gael Álvarez López** — Data Analyst  
-- **José Pedro Valenzuela López** — Frontend  
-- **Pedro Daniel Gutiérrez Pérez** — Frontend  
-- **Daniel Alberto Curiel Vargas** — Documentación
+### 🤝 Cómo contribuir
+¡Contribuciones bienvenidas! Sugerimos:
+1. Revisa los Issues o crea uno nuevo con la etiqueta `enhancement` o `bug`.
+2. Haz Fork y crea una rama descriptiva:
+   ```bash
+   git checkout -b feature/mejora-x
+   ```
+3. Realiza cambios y añade capturas/pruebas si aplica.  
+4. Pasa linter/formatter (HTML/CSS/JS).  
+5. Abre un Pull Request explicando objetivo, cambios y evidencia visual.
 
-### Licencia
-Proyecto **no comercial**, orientado a **investigación** y **ciencia abierta**. Sugerido: MIT/Apache-2.0/CC-BY (definir según necesidad).
+Pautas:
+- Mantén un tono científico y datos trazables.
+- Para nuevos datasets, incluye fuentes, licencias y metadatos.
+- No subas datos sensibles ni materiales con derechos restrictivos.
 
-### Atribuciones
-- NASA Space Apps Challenge (`images/nasa.png`).  
-- EarthBloom (`images/logo_1.png`).  
-- Bibliotecas/datos citados en el repositorio o en la documentación.
+### 🔐 Licencia
+Proyecto no comercial, orientado a investigación y ciencia abierta. Publicado bajo [MIT](LICENSE) salvo indicación distinta.
 
-**Contacto**  
-- Email: jose.valenzuela6861@alumnos.udg.mx  
+### Contacto
+- Email: jose.valenzuela6861@alumnos.udg.mx | emiliano.becerra5451@alumnos.udg.mx  
 - GitHub: https://github.com/pedro-val1304/EarthBloom
 
 ---
 
 ## English
 
-### Overview
-**EarthBloom** is a scientific platform developed for the **NASA Space Apps Challenge 2025** to support researchers studying plant phenology under climate change. It integrates **satellite**, **meteorological**, and **verified field observations** using **spatiotemporal machine learning** to produce dynamic maps estimating potential bloom areas and timing.
+### 🌸 Overview
+EarthBloom is a scientific platform for the NASA Space Apps Challenge 2025 to support researchers studying plant phenology under climate change. It integrates satellite and meteorological data with verified field observations and spatiotemporal ML to generate dynamic maps estimating potential bloom areas and timing.
 
-Key benefits:
-- Optimizes field campaigns by focusing resources on **high-interest ecological areas**.  
-- **Reduces costs** from unnecessary sampling.  
-- **Improves precision** of climate impact analyses.
+- Focus: open science, non‑commercial.  
+- Audience: researchers and NGOs.
 
-Project status:
-- This repository ships a **DEMO** using a static front-end.  
-- Some features (e.g., the **submission/registration to add points of interest**) are **not yet operational** and appear as placeholders.  
-- The project is **non-commercial** and **research-oriented**, aiming to provide reliable infrastructure for predictive phenology.
+#### Key benefits
+- Prioritize field campaigns in high‑value ecological regions.  
+- Reduce redundant sampling costs.  
+- Improve climate‑impact and phenophase analyses.
 
-Included documentation:
-- File: **EarthBloom_English.docx** with the scientific write-up (introduction, problem, solution, technologies, impact, scalability, team, APA references).
+#### Project status
+- Basic DEMO as an MVP.  
+- Some features are placeholders (POI submission, observation upload).  
+- Included doc: EarthBloom_English.docx
+- 
+#### Roadmap
+- Add datasets (HLS, MODIS, VIIRS, weather stations, GBIF/verified iNaturalist).  
+- Better species discrimination and phenophase criteria.  
+- Verified observation submission (evidence, light peer review, QC).  
+- Reproducible downloads (GeoTIFF/CSV) with standard metadata, DOIs, versioning.
 
-Future work:
-- Integrate **additional datasets** (HLS, MODIS, VIIRS, weather stations, GBIF/verified iNaturalist, etc.).  
-- **Improve species discrimination** via models and **phenophase** criteria for more specific research.  
-- Enable **verified observation submission** (evidence upload, light peer review, quality control).  
-- Provide **reproducible downloads** (GeoTIFF/CSV) with standard metadata (e.g., Darwin Core), **DOIs**, and **versioning**.
+### 🚀 Run the DEMO locally
+Requirements
+- Visual Studio Code  
+- Live Server extension  
+- Modern browser
 
-### How to run the DEMO locally
-Requirements:
-- **Visual Studio Code**
-- **Live Server** extension (by Ritwick Dey or equivalent)
-- **Modern browser**
-
-Steps (Fork recommended):
-1. **Fork** this repository to your GitHub account.  
-2. Clone your fork:
+Steps (Fork recommended)
+1. Fork and clone:
    - HTTPS:
      ```bash
      git clone https://github.com/YOUR_USER/EarthBloom.git
@@ -142,55 +177,36 @@ Steps (Fork recommended):
      ```bash
      git clone git@github.com:YOUR_USER/EarthBloom.git
      ```
-3. Open the repository folder in **Visual Studio Code**.  
-4. Install/enable **Live Server** extension.  
-5. In VS Code, right‑click `index.html` → **Open with Live Server**.
+2. Open the folder in VS Code.  
+3. Install/enable Live Server.  
+4. Right‑click `index.html` → Open with Live Server.
 
-Key pages:
-- `index.html` → Main landing page.  
-- `mapa.html` → Map/visualization **DEMO**.
+Key pages
+- `index.html` → Landing page.  
+- `mapa.html` → Map/visualization DEMO.
 
-If styles/images don’t load:
-- Verify folder structure (`css/`, `images/`) and relative paths.  
-- Perform a **hard refresh** (Ctrl/Cmd+Shift+R).
-
-### Suggested structure
-```
-.
-├─ index.html
-├─ mapa.html
-├─ flores.html
-├─ nuestro_equipo.html
-├─ css/
-│  └─ main.css
-├─ images/
-│  ├─ logo_1.png
-│  └─ nasa.png
-├─ script.js        (if applicable)
-└─ EarthBloom_English.docx
-```
+Troubleshooting
+- If styles/images don’t load: verify relative paths and structure (`css/`, `images/`), then hard refresh (Ctrl/Cmd+Shift+R).
 
 ### Technologies (Front DEMO)
-- **HTML, CSS, JavaScript**
-- **Leaflet**, **OpenStreetMap** (map DEMO)
-- **GeoJSON** (mock/placeholder)
+- HTML, CSS, JavaScript  
+- Leaflet + OpenStreetMap  
+- GeoJSON (mock/placeholder)
 
-### Authors / Team (from `nuestro_equipo.html`)
-- **Héctor Tadeo Cadena Alfaro** — Backend  
-- **Emiliano Becerra López** — Leader  
-- **Ángel Gael Álvarez López** — Data Analyst  
-- **José Pedro Valenzuela López** — Frontend  
-- **Pedro Daniel Gutiérrez Pérez** — Frontend  
-- **Daniel Alberto Curiel Vargas** — Documentation
+### 👤 Team
+- Héctor Tadeo Cadena Alfaro — Backend  
+- Emiliano Becerra López — Backend  
+- Ángel Gael Álvarez López — Data Analyst  
+- José Pedro Valenzuela López — Frontend  
+- Pedro Daniel Gutiérrez Pérez — Frontend  
+- Daniel Alberto Curiel Vargas — Documentation
 
-### License
-**Non-commercial**, **research-oriented** project. Suggested: MIT/Apache‑2.0/CC‑BY (choose as needed).
 
-### Acknowledgements
-- NASA Space Apps Challenge (`images/nasa.png`).  
-- EarthBloom (`images/logo_1.png`).  
-- Libraries/datasets referenced in the repo or in the documentation.
+### 📄 License
+Non‑commercial, research‑oriented. Released under [MIT](LICENSE) unless otherwise stated.
 
-**Contact**  
-- Email: jose.valenzuela6861@alumnos.udg.mx  
+### Contact
+- Email: emiliano.becerra5451@alumnos.udg.mx | jose.valenzuela6861@alumnos.udg.mx  
 - GitHub: https://github.com/pedro-val1304/EarthBloom
+
+---
