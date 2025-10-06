@@ -88,6 +88,7 @@ Páginas clave
 
 Solución de problemas
 - Si no cargan estilos/imágenes: verifica rutas relativas y estructura (`css/`, `images/`) y realiza una recarga dura (Ctrl/Cmd+Shift+R).
+- Si no cargan los mapas de calor ni los puntos, pruebe la carpeta backend por separado del proyecto, siguiendo las mismas indicaciones con live server.
 
 ### Tecnologías
 - HTML, CSS, JavaScript
@@ -159,6 +160,7 @@ Key pages
 
 Troubleshooting
 - If styles/images don’t load: verify relative paths and structure (`css/`, `images/`), then hard refresh (Ctrl/Cmd+Shift+R).
+- If neither heatmaps nor dots are not loading in the map, try backend folder separately from the main proyect, following the same live server indications.
 
 ### Technologies (Front DEMO)
 - HTML, CSS, JavaScript  
