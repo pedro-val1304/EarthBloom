@@ -19,7 +19,7 @@
 
 ---
 
-## Tabla de contenidos
+## Tabla de contenidos/Index
 - [Español](#español)
   - [Descripción](#-earthbloom)
   - [DEMO](#demo)
