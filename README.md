@@ -14,7 +14,7 @@
 <p align="center">
   <img src="frontend 2.0/images/logo_1.png" alt="EarthBloom Logo" height="64">
   &nbsp;&nbsp;
-  <img src="frontend 2.0/images/logo_1.png" alt="NASA Space Apps Challenge" height="64">
+  <img src="frontend 2.0/images/nasa.png" alt="NASA Space Apps Challenge" height="64">
 </p>
 
 ---
