@@ -1,861 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema ML de Wildflowers - Base de Datos Única</title>
-
-    
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        #map {
-            height: 100vh;
-            width: 100%;
-        }
-        
-        #info-panel {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            max-width: 400px;
-            z-index: 1000;
-            max-height: 90vh;
-            overflow-y: auto;
-        }
-        
-        .controls {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-        }
-        
-        .controls button {
-            margin: 5px;
-            padding: 8px 12px;
-            cursor: pointer;
-            display: block;
-            width: 200px;
-        }
-        
-        .form-group {
-            margin-bottom: 10px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        
-        .coordinates-input {
-            display: flex;
-            gap: 10px;
-        }
-        
-        .coordinates-input input {
-            flex: 1;
-        }
-        
-        .user-point-marker {
-            background-color: #ff00ff !important;
-        }
-        
-        .ml-vertex-marker {
-            background-color: #00ff00 !important;
-        }
-        
-        .tab-container {
-            margin-top: 15px;
-        }
-        
-        .tab-buttons {
-            display: flex;
-            margin-bottom: 10px;
-        }
-        
-        .tab-button {
-            flex: 1;
-            padding: 8px;
-            background: #f0f0f0;
-            border: none;
-            cursor: pointer;
-            font-size: 12px;
-        }
-        
-        .tab-button.active {
-            background: #3388ff;
-            color: white;
-        }
-        
-        .tab-content {
-            display: none;
-        }
-        
-        .tab-content.active {
-            display: block;
-        }
-        
-        .status-indicator {
-            padding: 5px 10px;
-            border-radius: 4px;
-            margin-bottom: 10px;
-            text-align: center;
-            font-weight: bold;
-        }
-        
-        .status-success {
-            background-color: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-        
-        .status-info {
-            background-color: #d1ecf1;
-            color: #0c5460;
-            border: 1px solid #bee5eb;
-        }
-        
-        .ml-explanation {
-            background-color: #f8f9fa;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
-            font-size: 12px;
-        }
-        
-        .ml-explanation h5 {
-            margin-top: 0;
-            color: #333;
-        }
-        
-        .ml-explanation ul {
-            padding-left: 15px;
-        }
-        
-        .ml-explanation li {
-            margin-bottom: 5px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EarthBloom | NASA Space Apps</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo_2.png">
+  <script src="https://unpkg.com/i18next@23.7.6/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
 </head>
-<body>
-    <div id="map"></div>
-    
-    <div id="info-panel">
-        <h3>🌺 Sistema ML Wildflowers</h3>
-        <div class="status-indicator status-info">
-            Base de Datos Única: Combinada
+<body class="fade-in">
+  <div class="main-content">
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img src="images/logo_2.png" class="logo-png" />
+        <span class="logo-main">EarthBloom</span>
+        <span class="logo-sub">NASA</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">ES</button>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active" data-i18n="nav.home">Inicio</a>
+        <a href="flores.html" data-i18n="nav.flowers">Flores</a>
+        <a href="nuestro_equipo.html" data-i18n="nav.team">Nuestro Equipo</a>
+        <a href="mapa.html" data-i18n="nav.map">Mapa (DEMO)</a>
+        <a href="registro.html" data-i18n="nav.register">Registro</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+  <!-- Fondo de video -->
+  <video class="hero__bg" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+    <source src="images/florecer_1.mp4" type="video/mp4" />
+    <!-- Fallback -->
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <!-- Capa oscura para legibilidad -->
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <!-- Contenido -->
+  <div class="hero-content">
+    <h2>
+      <span class="earth">Earth</span>
+      <span class="bloom">Bloom</span>
+    </h2>
+    <p>Plataforma científica para investigación fenológica utilizando datos satelitales de la NASA. Analice patrones de floración y distribuición de especies endémicas mexicanas.</p>
+    <a href="flores.html" class="btn">Explorar Base de Datos</a>
+  </div>
+</section>
+
+    <section class="intro">
+      <h2>Investigación Fenológica Avanzada</h2>
+      <p>Plataforma especializada para investigación científica que integra datos satelitales de la NASA con observaciones de campo validadas. Genere análisis de series temporales, modelos predictivos de floración y mapas de distribución de especies con herramientas diseñadas para investigadores.</p>
+      <img src="https://cdn.abacus.ai/images/1a828090-01be-428a-a51a-f6ee84559d4c.png" alt="Jardín botánico con diversidad de flores" class="intro-img">
+    </section>
+
+    <section class="features">
+      <h2>Herramientas de Investigación</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Análisis con Datos de la NASA</h3>
+          <p>Acceso a datos multiespectrales de satélites NASA (MODIS, VIIRS, Landsat) para análisis de índices de vegetación, temperatura de superficie y variables ambientales con aplicación en investigación fenológica.</p>
         </div>
-        
-        <div class="tab-container">
-            <div class="tab-buttons">
-                <button class="tab-button active" onclick="showTab('info-tab')">Info</button>
-                <button class="tab-button" onclick="showTab('add-tab')">Añadir</button>
-                <button class="tab-button" onclick="showTab('data-tab')">Datos</button>
-                <button class="tab-button" onclick="showTab('ml-tab')">🤖 ML Info</button>
-            </div>
-            
-            <div id="info-tab" class="tab-content active">
-                <div id="site-info">
-                    <p>Selecciona un área para ver detalles</p>
-                </div>
-                
-                <div id="legend">
-                    <h4>Leyenda</h4>
-                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                        <div style="width: 20px; height: 20px; background-color: #ff00ff; margin-right: 10px; opacity: 0.7;"></div>
-                        <span>Áreas de Interés con posibles florecimientos</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                        <div style="width: 12px; height: 12px; background-color: #ff00ff; border-radius: 50%; margin-right: 10px;"></div>
-                        <span>Puntos de Usuario</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                        <div style="width: 12px; height: 12px; background-color: #00ff00; border-radius: 50%; margin-right: 10px;"></div>
-                        <span>Vértices ML</span>
-                    </div>
-                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
-                        <div style="width: 25px; height: 5px; background: linear-gradient(90deg, red,  yellow,  lime, cyan, blue); margin-right: 10px;"></div>
-                        <span>Posibles puntos de floración</span>
-                    </div>
-                </div>
-                
-                <div id="auto-generation-status" class="status-indicator status-success" style="margin-top: 15px;">
-                    ✅ Polígonos ML generados automáticamente
-                </div>
-            </div>
-            
-            <div id="add-tab" class="tab-content">
-                <h4>➕ Añadir Punto</h4>
-                <div class="form-group">
-                    <label for="site-name">Nombre:</label>
-                    <input type="text" id="site-name" placeholder="Ej: Mi Nuevo Sitio">
-                </div>
-                
-                <div class="form-group">
-                    <label for="site-type">Tipo:</label>
-                    <select id="site-type">
-                        <option value="Wild">Wild</option>
-                        <option value="Plantation">Plantation</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="site-season">Temporada:</label>
-                    <input type="text" id="site-season" placeholder="Ej: Spring, Summer">
-                </div>
-                
-                <div class="form-group">
-                    <label for="site-area">Área (m²):</label>
-                    <input type="number" id="site-area" placeholder="Ej: 5000" min="0" step="0.001">
-                </div>
-                
-                <div class="form-group">
-                    <label>Coordenadas:</label>
-                    <div class="coordinates-input">
-                        <input type="text" id="site-lat" placeholder="Latitud" pattern="-?\d+(\.\d+)?">
-                        <input type="text" id="site-lng" placeholder="Longitud" pattern="-?\d+(\.\d+)?">
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <button onclick="addUserPoint()" style="background-color: #4CAF50; color: white; border: none; padding: 10px; border-radius: 4px; width: 100%;">Añadir Punto</button>
-                    <button onclick="toggleGetCoordsMode()" id="get-coords-btn" style="background-color: #2196F3; color: white; border: none; padding: 10px; border-radius: 4px; width: 100%; margin-top: 5px;">Obtener Coordenadas del Clic</button>
-                </div>
-            </div>
-            
-            <div id="data-tab" class="tab-content">
-                <h4>📊 Gestión de Datos</h4>
-                <p><strong>Puntos de usuario:</strong> <span id="user-points-count">0</span></p>
-                <p><strong>Polígonos ML:</strong> <span id="ml-polygons-count">0</span></p>
-                <p><strong>Vértices ML:</strong> <span id="ml-vertices-count">0</span></p>
-                <p><strong>Polígonos totales:</strong> <span id="total-polygons-count">0</span></p>
-                
-                <button onclick="generateMLPolygons()" style="background-color: #9C27B0; color: white; border: none; padding: 10px; border-radius: 4px; width: 100%; margin-top: 10px;">🔄 Generar Polígonos ML</button>
-                <button onclick="exportData()" style="background-color: #FF9800; color: white; border: none; padding: 10px; border-radius: 4px; width: 100%; margin-top: 5px;">📤 Exportar Base de Datos</button>
-                <button onclick="clearUserPoints()" style="background-color: #f44336; color: white; border: none; padding: 10px; border-radius: 4px; width: 100%; margin-top: 5px;">🗑️ Limpiar Mis Puntos</button>
-                <button onclick="resetDatabase()" style="background-color: #607d8b; color: white; border: none; padding: 10px; border-radius: 4px; width: 100%; margin-top: 5px;">🔄 Resetear Base de Datos</button>
-            </div>
-            
-            <div id="ml-tab" class="tab-content">
-                <h4>🤖 Explicación del Machine Learning</h4>
-                <div id="ml-explanation-content">
-                    <p>Cargando información del ML...</p>
-                </div>
-            </div>
+        <div class="feature-card">
+          <h3>Validación Científica</h3>
+          <p>Integración de observaciones de campo validadas por expertos con controles de calidad científicos. Protocolos estandarizados para garantizar la precisión de los datos en investigaciones publicables.</p>
         </div>
-    </div>
-    
-    <div class="controls">
-        <button id="toggle-heatmap" onclick="toggleHeatmap()">Ocultar Heatmap</button>
-        <button id="toggle-ml" onclick="toggleMLPolygons()">Ocultar Área de interés</button>
-        <button id="toggle-users-vertices" onclick="toggleAllPoints()">Ocultar Usuarios y Vértices</button>
-        <button onclick="resetView()">Vista Inicial</button>
+        <div class="feature-card">
+          <h3>Modelado Predictivo</h3>
+          <p>Herramientas avanzadas para modelado de distribución de especies, predicción de eventos fenológicos y análisis de tendencias temporales con aplicaciones en conservación y cambio climático.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <!-- Sección 1: Marca -->
+    <div class="footer__brand">
+      <a href="index.html" class="brand-link" aria-label="Ir al inicio de EarthBloom">
+        <img src="images/logo_1.png" alt="Logo EarthBloom" class="brand-logo" loading="lazy" />
+      </a>
+      <p class="brand-tag" data-i18n="footer.brand.tag">Plataforma de investigación fenológica</p>
+      <div class="badge-row">
+        <a href="https://www.spaceappschallenge.org/" target="_blank" rel="noopener"
+           class="badge-link" aria-label="NASA Space Apps Challenge">
+          <img src="images/nasa.png" alt="NASA Space Apps Challenge" class="badge-logo" loading="lazy" />
+        </a>
+      </div>
     </div>
 
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <!-- Leaflet Heat Plugin -->
-    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
-    
-    <script>
-        // Variables globales
-        let map;
-        let heatLayer;
-        let originalLayer;
-        let mlLayer;
-        let userPointsLayer;
-        let mlVerticesLayer;
-        let isGettingCoords = false;
-        let userPoints = [];
-        let mlVertices = [];
-        let originalPointsLayer;
-        let originalPoints = [];
+    <!-- Sección 2: Navegación -->
+    <nav class="footer__nav" aria-label="Navegación del sitio">
+      <h4 class="footer__title" data-i18n="footer.nav.title">Sitio</h4>
+      <ul class="footer__list">
+        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="flores.html" data-i18n="nav.flowers">Flores</a></li>
+        <li><a href="nuestro_equipo.html" data-i18n="nav.team">Nuestro Equipo</a></li>
+        <li><a href="mapa.html" data-i18n="nav.map">Mapa (DEMO)</a></li>
+        <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
+      </ul>
+    </nav>
 
-        // Inicializar mapa
-        function initMap() {
-            map = L.map('map').setView([36.7783, -119.4179], 6);
-            
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-            
-            userPointsLayer = L.layerGroup().addTo(map);
-            mlVerticesLayer = L.layerGroup().addTo(map);
-            originalPointsLayer = L.layerGroup().addTo(map); // ✅ NUEVA CAPA
-            
-            loadAllData();
-        }
-        async function loadOriginalPoints() {
-            try {
-                const response = await fetch('/api/original-points');
-                originalPoints = await response.json();
-                
-                originalPointsLayer.clearLayers();
-                
-                originalPoints.forEach(point => {
-                    const marker = L.marker([point.lat, point.lng], {
-                        icon: L.divIcon({
-                            className: 'original-point-marker',
-                            html: '<div style="background-color: #3388ff; width: 10px; height: 10px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 3px rgba(0,0,0,0.5);"></div>',
-                            iconSize: [14, 14]
-                        })
-                    }).addTo(originalPointsLayer);
-                    
-                    marker.bindPopup(`
-                        <div class="original-point-popup">
-                            <h4>🏞️ ${point.site_name || 'Punto Original'}</h4>
-                            <p><strong>Tipo:</strong> ${point.type || 'Original'}</p>
-                            <p><strong>Temporada:</strong> ${point.season || 'No especificada'}</p>
-                            <p><strong>Área:</strong> ${point.area || 0} m²</p>
-                            <p><strong>Coordenadas:</strong> ${point.lat?.toFixed(4)}, ${point.lng?.toFixed(4)}</p>
-                            <p><em>Datos originales del GeoJSON</em></p>
-                        </div>
-                    `);
-                });
-                
-                console.log(`✅ ${originalPoints.length} puntos originales cargados como marcadores visibles`);
-                
-            } catch (error) {
-                console.error('Error cargando puntos originales:', error);
-            }
-        }
-        // Cargar todos los datos desde la BASE DE DATOS COMBINADA
-        async function loadAllData() {
-            await loadOriginalPolygons();
-            await loadMLPolygons();
-            await loadUserPoints();
-            await loadMLVertices();
-            await loadOriginalPoints(); // ✅ CARGAR PUNTOS ORIGINALES
-            await loadMLExplanation();
-            updateHeatmap();
-            updateCounts();
-        }
+    <!-- Sección 3: Recursos -->
+    <div class="footer__resources">
+      <h4 class="footer__title" data-i18n="footer.resources.title">Recursos</h4>
+      <ul class="footer__list">
+        <li><a href="https://observer.globe.gov/do-globe-observer/do-more/data-requests/wildflower-blooms" target="_blank" rel="noopener">Globe Observer</a></li>
+        <li><a href="https://leafletjs.com/" target="_blank" rel="noopener">LeafLet</a></li>
+        <li><a href="https://worldview.earthdata.nasa.gov/?v=-119.528848216234,36.747254672946376,-118.8926417704638,37.02623539111354&l=Reference_Labels_15m(hidden),Reference_Features_15m(hidden),Coastlines_15m,HLS_L30_Nadir_BRDF_Adjusted_Reflectance,HLS_S30_Nadir_BRDF_Adjusted_Reflectance,VIIRS_NOAA21_CorrectedReflectance_TrueColor(hidden),VIIRS_NOAA20_CorrectedReflectance_TrueColor(hidden),VIIRS_SNPP_CorrectedReflectance_TrueColor(hidden),MODIS_Aqua_CorrectedReflectance_TrueColor(hidden),MODIS_Terra_CorrectedReflectance_TrueColor&lg=false&t=2025-03-26-T12%3A35%3A19Z" target="_blank" rel="noopener">California Superbloom</a></li>
+      </ul>
+    </div>
 
+    <!-- Sección 4: Contacto -->
+    <div class="footer__contact">
+      <h4 class="footer__title" data-i18n="footer.contact.title">Contacto</h4>
+      <ul class="footer__list">
+        <li><a>emiliano.becerra5451@alumnos.udg.mx</a></li>
+        <li><a href="https://github.com/pedro-val1304/EarthBloom" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
 
-        // Cargar polígonos originales desde la base de datos combinada
-        async function loadOriginalPolygons() {
-            try {
-                const response = await fetch('/api/original-polygons');
-                const data = await response.json();
-                
-                if (originalLayer) {
-                    map.removeLayer(originalLayer);
-                }
-                
-                originalLayer = L.geoJSON(data, {
-                    style: function(feature) {
-                        return {
-                            color: '#3388ff',
-                            weight: 2,
-                            opacity: 0.7,
-                            fillColor: getColorByType(feature.properties.Type),
-                            fillOpacity: 0.2
-                        };
-                    },
-                    onEachFeature: function(feature, layer) {
-                        if (feature.properties) {
-                            const popupContent = `
-                                <div>
-                                    <h3>${feature.properties.Site || 'Sin nombre'}</h3>
-                                    <p><strong>Tipo:</strong> ${feature.properties.Type || 'No especificado'}</p>
-                                    <p><strong>Temporada:</strong> ${feature.properties.Season || 'No especificada'}</p>
-                                    <p><strong>Área:</strong> ${(feature.properties.Area || 0).toLocaleString()} m²</p>
-                                    <p><em>Datos originales</em></p>
-                                </div>
-                            `;
-                            layer.bindPopup(popupContent);
-                        }
-                    }
-                })
-                
-            } catch (error) {
-                console.error('Error cargando polígonos originales:', error);
-            }
-        }
+  <div class="footer__bottom">
+    <p data-i18n="footer.copyright">© 2025 EarthBloom. Todos los derechos reservados.</p>
+    <ul class="footer__legal">
+      <li><a href="#" data-i18n="footer.legal.privacy">Privacidad</a></li>
+      <li><a href="#" data-i18n="footer.legal.terms">Términos</a></li>
+      <li><a href="#" data-i18n="footer.legal.accessibility">Accesibilidad</a></li>
+    </ul>
+  </div>
+</footer>
 
-        // Cargar polígonos ML desde la base de datos combinada
-        async function loadMLPolygons() {
-            try {
-                const response = await fetch('/api/ml-polygons');
-                const data = await response.json();
-                
-                if (mlLayer) {
-                    map.removeLayer(mlLayer);
-                }
-                
-                mlLayer = L.geoJSON(data, {
-                    style: {
-                        color: '#ff00ff',
-                        weight: 3,
-                        opacity: 0.8,
-                        fillColor: '#ff00ff',
-                        fillOpacity: 0.2,
-                        dashArray: '5, 5'
-                    },
-                    onEachFeature: function(feature, layer) {
-                        const props = feature.properties || {};
-                        let popupContent = `
-                            <div>
-                                <h3>${props.Site || 'Área ML'}</h3>
-                                <p><strong>Tipo:</strong> ${props.Type || 'Auto-generado'}</p>
-                                <p><strong>Temporada:</strong> ${props.Season || 'Variable'}</p>
-                                <p><strong>Área:</strong> ${(props.Area || 0).toLocaleString()} m²</p>
-                                <p><strong>Generado automáticamente</strong></p>
-                                <p><strong>Puntos en cluster:</strong> ${props.point_count || 'N/A'}</p>
-                                <p><strong>Puntos de usuario:</strong> ${props.user_points || 'N/A'}</p>
-                        `;
-                        
-                        if (props.original_polygons_involved && props.original_polygons_involved.length > 0) {
-                            popupContent += `<p><strong>Polígonos involucrados:</strong> ${props.original_polygons_involved.join(', ')}</p>`;
-                        }
-                        
-                        popupContent += `</div>`;
-                        layer.bindPopup(popupContent);
-                    }
-                }).addTo(map);
-                
-            } catch (error) {
-                console.error('Error cargando polígonos ML:', error);
-            }
-        }
-
-        // Cargar puntos de usuario
-        async function loadUserPoints() {
-            try {
-                const response = await fetch('/api/user-points');
-                userPoints = await response.json();
-                
-                userPointsLayer.clearLayers();
-                
-                userPoints.forEach(point => {
-                    const marker = L.marker([point.lat, point.lng], {
-                        icon: L.divIcon({
-                            className: 'user-point-marker',
-                            html: '<div style="background-color: #ff00ff; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 5px rgba(0,0,0,0.5);"></div>',
-                            iconSize: [16, 16]
-                        })
-                    }).addTo(userPointsLayer);
-                    
-                    marker.bindPopup(`
-                        <div class="user-point-popup">
-                            <h4>📍 ${point.name || 'Punto de usuario'}</h4>
-                            <p><strong>Tipo:</strong> ${point.type || 'No especificado'}</p>
-                            <p><strong>Temporada:</strong> ${point.season || 'No especificada'}</p>
-                            <p><strong>Área:</strong> ${point.area || 0} m²</p>
-                            <p><strong>Coordenadas:</strong> ${point.lat?.toFixed(4)}, ${point.lng?.toFixed(4)}</p>
-                            <button onclick="removeUserPoint('${point.id}')" style="background-color: #ff4757; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Eliminar</button>
-                        </div>
-                    `);
-                });
-                
-                console.log(`✅ ${userPoints.length} puntos de usuario cargados como marcadores visibles`);
-                
-            } catch (error) {
-                console.error('Error cargando puntos de usuario:', error);
-            }
-        }
-
-        // Cargar vértices ML como puntos visibles
-        async function loadMLVertices() {
-            try {
-                const response = await fetch('/api/ml-vertices');
-                mlVertices = await response.json();
-                
-                mlVerticesLayer.clearLayers();
-                
-                mlVertices.forEach(vertex => {
-                    const marker = L.marker([vertex.lat, vertex.lng], {
-                        icon: L.divIcon({
-                            className: 'ml-vertex-marker',
-                            html: '<div style="background-color: #00ff00; width: 8px; height: 8px; border-radius: 50%; border: 1px solid white; box-shadow: 0 0 3px rgba(0,0,0,0.5);"></div>',
-                            iconSize: [10, 10]
-                        })
-                    }).addTo(mlVerticesLayer);
-                    
-                    marker.bindPopup(`
-                        <div>
-                            <h4>Vértice ML</h4>
-                            <p><strong>Polígono:</strong> ${vertex.source_polygon || 'N/A'}</p>
-                            <p><strong>Tipo:</strong> ${vertex.type || 'Vértice'}</p>
-                            <p><em>Generado automáticamente</em></p>
-                        </div>
-                    `);
-                });
-                
-            } catch (error) {
-                console.error('Error cargando vértices ML:', error);
-            }
-        }
-
-        // Cargar explicación del ML
-        async function loadMLExplanation() {
-            try {
-                const response = await fetch('/api/ml-explanation');
-                const explanation = await response.json();
-                
-                const content = document.getElementById('ml-explanation-content');
-                content.innerHTML = `
-                    <div class="ml-explanation">
-                        <h5>🔍 Algoritmo Utilizado: ${explanation.algorithm}</h5>
-                        <p><strong>Propósito:</strong> ${explanation.purpose}</p>
-                        
-                        <h5>⚙️ Parámetros del DBSCAN:</h5>
-                        <ul>
-                            <li><strong>eps (ε):</strong> ${explanation.parameters.eps} - ${explanation.parameters.eps_meaning}</li>
-                            <li><strong>min_samples:</strong> ${explanation.parameters.min_samples} - ${explanation.parameters.min_samples_meaning}</li>
-                        </ul>
-                        
-                        <h5>🎯 Criterios de Decisión:</h5>
-                        <ul>
-                            <li><strong>Puntos Centrales (Core Points):</strong> ${explanation.decision_criteria.core_points}</li>
-                            <li><strong>Puntos Frontera (Border Points):</strong> ${explanation.decision_criteria.border_points}</li>
-                            <li><strong>Puntos de Ruido (Noise Points):</strong> ${explanation.decision_criteria.noise_points}</li>
-                            <li><strong>Formación de Clusters:</strong> ${explanation.decision_criteria.cluster_formation}</li>
-                        </ul>
-                        
-                        <h5>📐 Formación de Polígonos:</h5>
-                        <ul>
-                            <li><strong>Algoritmo:</strong> ${explanation.polygon_formation.algorithm}</li>
-                            <li><strong>Propósito:</strong> ${explanation.polygon_formation.purpose}</li>
-                            <li><strong>Resultado:</strong> ${explanation.polygon_formation.output}</li>
-                        </ul>
-                        
-                        <h5>✅ Ventajas:</h5>
-                        <ul>
-                            ${explanation.advantages.map(adv => `<li>${adv}</li>`).join('')}
-                        </ul>
-                        
-                        <h5>⚠️ Limitaciones:</h5>
-                        <ul>
-                            ${explanation.limitations.map(lim => `<li>${lim}</li>`).join('')}
-                        </ul>
-                    </div>
-                `;
-                
-            } catch (error) {
-                console.error('Error cargando explicación ML:', error);
-                document.getElementById('ml-explanation-content').innerHTML = '<p>Error cargando información del ML</p>';
-            }
-        }
-
-        // Añadir punto de usuario
-        async function addUserPoint() {
-            const name = document.getElementById('site-name').value;
-            const type = document.getElementById('site-type').value;
-            const season = document.getElementById('site-season').value;
-            const area = parseFloat(document.getElementById('site-area').value) || 1000;
-            const lat = parseFloat(document.getElementById('site-lat').value);
-            const lng = parseFloat(document.getElementById('site-lng').value);
-            
-            if (!name || isNaN(lat) || isNaN(lng)) {
-                alert('Por favor, completa al menos el nombre y las coordenadas.');
-                return;
-            }
-            
-            try {
-                const response = await fetch('/api/add-user-point', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        name: name,
-                        type: type,
-                        season: season,
-                        area: area,
-                        lat: lat,
-                        lng: lng
-                    })
-                });
-                
-                const result = await response.json();
-                
-                if (result.status === 'success') {
-                    // Limpiar formulario
-                    document.getElementById('site-name').value = '';
-                    document.getElementById('site-season').value = '';
-                    document.getElementById('site-area').value = '';
-                    document.getElementById('site-lat').value = '';
-                    document.getElementById('site-lng').value = '';
-                    
-                    // Recargar puntos y actualizar heatmap
-                    await loadUserPoints();
-                    await loadMLVertices();
-                    updateHeatmap();
-                    updateCounts();
-                    
-                    alert('✅ Punto añadido a la base de datos combinada.');
-                } else {
-                    alert('❌ Error añadiendo punto: ' + result.message);
-                }
-                
-            } catch (error) {
-                console.error('Error añadiendo punto:', error);
-                alert('❌ Error añadiendo punto.');
-            }
-        }
-
-        // Eliminar punto de usuario (función placeholder)
-        async function removeUserPoint(pointId) {
-            if (confirm('¿Estás seguro de que quieres eliminar este punto?')) {
-                alert('Funcionalidad de eliminación pendiente de implementar en el servidor');
-            }
-        }
-
-        // Generar polígonos ML desde la base de datos combinada
-        async function generateMLPolygons() {
-            try {
-                const response = await fetch('/api/generate-ml-polygons', {
-                    method: 'POST'
-                });
-                
-                const result = await response.json();
-                
-                if (result.status === 'success') {
-                    // Recargar TODOS los datos desde la base de datos combinada
-                    await loadOriginalPolygons();
-                    await loadMLPolygons();
-                    await loadMLVertices();
-                    updateHeatmap();
-                    updateCounts();
-                    alert('✅ ' + result.message);
-                } else {
-                    alert('❌ ' + result.message);
-                }
-                
-            } catch (error) {
-                console.error('Error generando polígonos ML:', error);
-                alert('❌ Error generando polígonos ML.');
-            }
-        }
-
-        // Actualizar heatmap desde los CENTROIDES de polígonos ML
-        async function updateHeatmap() {
-            if (heatLayer) {
-                map.removeLayer(heatLayer);
-            }
-            
-            try {
-                const response = await fetch('/api/heatmap-data');
-                const data = await response.json();
-                
-                const heatPoints = data.heatmap_data.map(point => [
-                    point.lat, point.lng, point.intensity
-                ]);
-                
-                heatLayer = L.heatLayer(heatPoints, {
-                    radius: 30,       // área más amplia → menos concentración visual
-                    blur: 25,         // difumina más
-                    maxZoom: 10,
-                    maxOpacity: 0.4,  // controla la intensidad global
-                    gradient: {
-                        0.0: 'blue',      // baja densidad
-                        0.4: 'cyan',      // transicion suave
-                        0.6: 'lime',      // densidad media
-                        0.8: 'yellow',    // alta densidad
-                        1.0: 'red'        // máxima densidad
-                    }
-                }).addTo(map);
-                
-            } catch (error) {
-                console.error('Error actualizando heatmap:', error);
-            }
-        }
-
-        // Funciones de control
-        function toggleHeatmap() {
-            const button = document.getElementById('toggle-heatmap');
-            if (map.hasLayer(heatLayer)) {
-                map.removeLayer(heatLayer);
-                button.textContent = 'Mostrar Heatmap';
-            } else {
-                map.addLayer(heatLayer);
-                button.textContent = 'Ocultar Heatmap';
-            }
-        }
-
-        function toggleOriginalPolygons() {
-            const button = document.getElementById('toggle-original');
-            if (map.hasLayer(originalLayer)) {
-                map.removeLayer(originalLayer);
-                button.textContent = 'Mostrar Originales';
-            } else {
-                map.addLayer(originalLayer);
-                button.textContent = 'Ocultar Originales';
-            }
-        }
-
-        function toggleMLPolygons() {
-            const button = document.getElementById('toggle-ml');
-            if (map.hasLayer(mlLayer)) {
-                map.removeLayer(mlLayer);
-                button.textContent = 'Mostrar Área de Interés';
-            } else {
-                map.addLayer(mlLayer);
-                button.textContent = 'Ocultar Área de Interés';
-            }
-        }
-
-        function toggleAllPoints() {
-            const button = document.getElementById('toggle-points');
-            const allPointsVisible = map.hasLayer(userPointsLayer) && 
-                                    map.hasLayer(mlVerticesLayer) && 
-                                    map.hasLayer(originalPointsLayer);
-            
-            if (allPointsVisible) {
-                map.removeLayer(userPointsLayer);
-                map.removeLayer(mlVerticesLayer);
-                map.removeLayer(originalPointsLayer);
-                button.textContent = 'Mostrar Todos los Puntos';
-            } else {
-                map.addLayer(userPointsLayer);
-                map.addLayer(mlVerticesLayer);
-                map.addLayer(originalPointsLayer);
-                button.textContent = 'Ocultar Todos los Puntos';
-            }
-        }
-
-        function toggleGetCoordsMode() {
-            isGettingCoords = !isGettingCoords;
-            const button = document.getElementById('get-coords-btn');
-            
-            if (isGettingCoords) {
-                button.textContent = 'Cancelar Obtención';
-                button.style.backgroundColor = '#ff6b6b';
-                map.getContainer().style.cursor = 'crosshair';
-                map.on('click', onMapClickGetCoords);
-            } else {
-                button.textContent = 'Obtener Coordenadas del Clic';
-                button.style.backgroundColor = '#2196F3';
-                map.getContainer().style.cursor = '';
-                map.off('click', onMapClickGetCoords);
-            }
-        }
-
-        function onMapClickGetCoords(e) {
-            const lat = e.latlng.lat.toFixed(6);
-            const lng = e.latlng.lng.toFixed(6);
-            
-            document.getElementById('site-lat').value = lat;
-            document.getElementById('site-lng').value = lng;
-            
-            toggleGetCoordsMode();
-        }
-
-        function resetView() {
-            map.setView([36.7783, -119.4179], 6);
-        }
-
-        function exportData() {
-            window.open('/api/export-combined', '_blank');
-        }
-
-        // Limpiar puntos de usuario (función placeholder)
-        async function clearUserPoints() {
-            if (confirm('¿Estás seguro de que quieres eliminar todos tus puntos?')) {
-                alert('Funcionalidad de limpieza pendiente de implementar en el servidor');
-            }
-        }
-
-        // Resetear base de datos
-        async function resetDatabase() {
-            if (confirm('⚠️ ¿Estás seguro de que quieres resetear la base de datos completa? Se perderán todos los polígonos ML y puntos de usuario.')) {
-                try {
-                    const response = await fetch('/api/reset-database', {
-                        method: 'POST'
-                    });
-                    
-                    const result = await response.json();
-                    
-                    if (result.status === 'success') {
-                        // Recargar todo
-                        await loadAllData();
-                        alert('✅ ' + result.message);
-                    } else {
-                        alert('❌ ' + result.message);
-                    }
-                } catch (error) {
-                    console.error('Error reseteando base de datos:', error);
-                    alert('❌ Error reseteando base de datos.');
-                }
-            }
-        }
-
-        function updateCounts() {
-            document.getElementById('user-points-count').textContent = userPoints.length;
-            document.getElementById('ml-vertices-count').textContent = mlVertices.length;
-            
-            // Contar polígonos ML
-            const mlCount = mlLayer ? Object.keys(mlLayer._layers).length : 0;
-            document.getElementById('ml-polygons-count').textContent = mlCount;
-            
-            // Contar total de polígonos
-            const originalCount = originalLayer ? Object.keys(originalLayer._layers).length : 0;
-            document.getElementById('total-polygons-count').textContent = originalCount + mlCount;
-            
-            // Actualizar estado de generación automática
-            const statusElement = document.getElementById('auto-generation-status');
-            if (mlCount > 0) {
-                statusElement.textContent = `✅ ${mlCount} polígonos ML generados automáticamente`;
-                statusElement.className = 'status-indicator status-success';
-            } else {
-                statusElement.textContent = 'ℹ️ No hay polígonos ML generados automáticamente';
-                statusElement.className = 'status-indicator status-info';
-            }
-        }
-
-        function showTab(tabName) {
-            // Ocultar todos los tabs
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            document.querySelectorAll('.tab-button').forEach(button => {
-                button.classList.remove('active');
-            });
-            
-            // Mostrar tab seleccionado
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-
-        function getColorByType(type) {
-            switch(type) {
-                case 'Wild': return '#1b5e20';
-                case 'Plantation': return '#ff6f00';
-                default: return '#3388ff';
-            }
-        }
-
-        // Inicializar cuando se carga la página
-        document.addEventListener('DOMContentLoaded', function() {
-            initMap();
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
