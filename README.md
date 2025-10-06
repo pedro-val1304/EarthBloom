@@ -6,7 +6,6 @@
 
 <p align="center">
   <a href="https://github.com/pedro-val1304/EarthBloom"><img src="https://img.shields.io/badge/status-DEMO-blue?style=for-the-badge" alt="Status"></a>
-  <a href="https://github.com/pedro-val1304/EarthBloom/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"></a>
   <a href="https://github.com/pedro-val1304/EarthBloom/issues"><img src="https://img.shields.io/github/issues/pedro-val1304/EarthBloom?style=for-the-badge&color=orange" alt="Issues"></a>
   <a href="https://github.com/pedro-val1304/EarthBloom/stargazers"><img src="https://img.shields.io/github/stars/pedro-val1304/EarthBloom?style=for-the-badge&color=yellow" alt="Stars"></a>
   <a href="https://spaceappschallenge.org/"><img src="https://img.shields.io/badge/NASA%20Space%20Apps-2025-0b3d91?style=for-the-badge" alt="NASA Space Apps 2025"></a>
@@ -24,26 +23,16 @@
 - [Español](#español)
   - [Descripción](#-earthbloom)
   - [DEMO](#demo)
-  - [Quick Start](#-quick-start)
   - [Ejecutar la DEMO localmente](#-ejecutar-la-demo-localmente)
-  - [Arquitectura (DEMO)](#-arquitectura-demo)
   - [Tecnologías](#tecnologías)
   - [Equipo](#-equipo)
-  - [Cómo contribuir](#-cómo-contribuir)
-  - [Código de conducta](#-código-de-conducta)
-  - [Licencia](#-licencia)
   - [Contacto](#contacto)
 - [English](#english)
   - [Overview](#-overview)
   - [DEMO](#demo-1)
-  - [Quick Start](#-quick-start-1)
   - [Run locally](#-run-the-demo-locally)
-  - [Structure (DEMO)](#-structure-demo)
   - [Technologies](#technologies-front-demo)
   - [Team](#-team)
-  - [Contributing](#-contributing)
-  - [Code of Conduct](#-code-of-conduct)
-  - [License](#-license)
   - [Contact](#contact-1)
 
 ---
@@ -64,7 +53,7 @@ EarthBloom es una plataforma científica desarrollada para el NASA Space Apps Ch
 #### Estado del proyecto
 - Este repositorio contiene una DEMO basada usando los datos otorgados, siendo un MVP.
 - Algunas funciones (p. ej., registro para agregar puntos de interés) aún no están operativas y se muestran como vistas/placeholder.
-- Documentación incluida: EarthBloom_English.docx 
+- Documentación incluida: [Descarga directa (.docx)](https://raw.githubusercontent.com/pedro-val1304/EarthBloom/main/EarthBloom_English.docx)
 
 #### Roadmap
 - Integrar más bases de datos (HLS, MODIS, VIIRS, estaciones meteorológicas, GBIF/iNaturalist verificado, etc.).
@@ -112,25 +101,6 @@ Solución de problemas
 - Pedro Daniel Gutiérrez Pérez — Frontend  
 - Daniel Alberto Curiel Vargas — Documentación
 
-### 🤝 Cómo contribuir
-¡Contribuciones bienvenidas! Sugerimos:
-1. Revisa los Issues o crea uno nuevo con la etiqueta `enhancement` o `bug`.
-2. Haz Fork y crea una rama descriptiva:
-   ```bash
-   git checkout -b feature/mejora-x
-   ```
-3. Realiza cambios y añade capturas/pruebas si aplica.  
-4. Pasa linter/formatter (HTML/CSS/JS).  
-5. Abre un Pull Request explicando objetivo, cambios y evidencia visual.
-
-Pautas:
-- Mantén un tono científico y datos trazables.
-- Para nuevos datasets, incluye fuentes, licencias y metadatos.
-- No subas datos sensibles ni materiales con derechos restrictivos.
-
-### 🔐 Licencia
-Proyecto no comercial, orientado a investigación y ciencia abierta. Publicado bajo [MIT](LICENSE) salvo indicación distinta.
-
 ### Contacto
 - Email: jose.valenzuela6861@alumnos.udg.mx | emiliano.becerra5451@alumnos.udg.mx  
 - GitHub: https://github.com/pedro-val1304/EarthBloom
@@ -153,7 +123,7 @@ EarthBloom is a scientific platform for the NASA Space Apps Challenge 2025 to su
 #### Project status
 - Basic DEMO as an MVP.  
 - Some features are placeholders (POI submission, observation upload).  
-- Included doc: EarthBloom_English.docx
+- Included doc: EarthBloom_English.docx [Install now (.docx)](https://raw.githubusercontent.com/pedro-val1304/EarthBloom/main/EarthBloom_English.docx)
 - 
 #### Roadmap
 - Add datasets (HLS, MODIS, VIIRS, weather stations, GBIF/verified iNaturalist).  
@@ -200,10 +170,6 @@ Troubleshooting
 - José Pedro Valenzuela López — Frontend  
 - Pedro Daniel Gutiérrez Pérez — Frontend  
 - Daniel Alberto Curiel Vargas — Documentation
-
-
-### 📄 License
-Non‑commercial, research‑oriented. Released under [MIT](LICENSE) unless otherwise stated.
 
 ### Contact
 - Email: emiliano.becerra5451@alumnos.udg.mx | jose.valenzuela6861@alumnos.udg.mx  
