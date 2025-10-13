@@ -1,0 +1,107 @@
+/* =============================== */
+/* SECCIÓN: INTRODUCCIÓN */
+/* =============================== */
+
+.intro {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: var(--color-blanco-calido);
+    position: relative;
+    padding-bottom: 2rem
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.05"><path d="M30,30 050,10 70,30 T90,50 T70,70 T50,90 T30,70 T10,50 T30,30 Z" fill="#23799a79"/></svg>') repeat;
+    background-size: 80px 80px;
+}
+
+.intro h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--texto-principal);
+    margin-bottom: 2rem;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.intro h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--acento-principal) 0%, var(--acento-secundario) 100%);
+    border-radius: 2px;
+}
+
+.intro p {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--texto-secundario);
+    max-width: 800px;
+    margin:2rem auto 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.intro-img {
+    max-width: 80%;
+    border-radius: 12px;
+    box-shadow: var(--sombra-principal);
+    transition: all 0.4s ease;
+    border: 2px solid var(--borde-principal);
+    position: relative;
+    z-index: 2;
+}
+
+.intro-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 50px rgba(46, 51, 48, 0.15);
+}
+
+/* =============================== */
+/* SECTION: CARACTERISTICAS */
+/* =============================== */
+
+.features {
+    padding: 3.5rem 2rem 5rem;
+    background: var(--fondo-principal);
+    text-align: center;
+    position: relative;
+    padding-top: 2rem;
+}
+
+.features::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 70%, rgba(138, 155, 110, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(226, 162, 156, 0.05) 0%, transparent 50%);
+}
+
+.features h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--texto-principal);
+    margin-bottom: 2rem;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    position: relative;
+}

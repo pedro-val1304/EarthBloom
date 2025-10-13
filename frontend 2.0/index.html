@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EarthBloom | NASA Space Apps</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo_2.png">
+  <script src="https://unpkg.com/i18next@23.7.6/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+</head>
+<body class="fade-in">
+  <div class="main-content">
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img src="images/logo_2.png" class="logo-png" />
+        <span class="logo-main">EarthBloom</span>
+        <span class="logo-sub">NASA</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">ES</button>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active" data-i18n="nav.home">Inicio</a>
+        <a href="flores.html" data-i18n="nav.flowers">Flores</a>
+        <a href="nuestro_equipo.html" data-i18n="nav.team">Nuestro Equipo</a>
+        <a href="../backend/templates/plugin.html" data-i18n="nav.map">Mapa (DEMO)</a>
+        <a href="registro.html" data-i18n="nav.register">Registro</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+  <!-- Fondo de video -->
+  <video class="hero__bg" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+    <source src="images/florecer_1.mp4" type="video/mp4" />
+    <!-- Fallback -->
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <!-- Capa oscura para legibilidad -->
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <!-- Contenido -->
+  <div class="hero-content">
+    <h2>
+      <span class="earth">Earth</span>
+      <span class="bloom">Bloom</span>
+    </h2>
+    <p>Plataforma científica para investigación fenológica utilizando datos satelitales de la NASA. Analice patrones de floración y distribuición de especies endémicas mexicanas.</p>
+    <a href="flores.html" class="btn">Explorar Base de Datos</a>
+  </div>
+</section>
+
+    <section class="intro">
+      <h2>Investigación Fenológica Avanzada</h2>
+      <p>Plataforma especializada para investigación científica que integra datos satelitales de la NASA con observaciones de campo validadas. Genere análisis de series temporales, modelos predictivos de floración y mapas de distribución de especies con herramientas diseñadas para investigadores.</p>
+      <img src="https://cdn.abacus.ai/images/1a828090-01be-428a-a51a-f6ee84559d4c.png" alt="Jardín botánico con diversidad de flores" class="intro-img">
+    </section>
+
+    <section class="features">
+      <h2>Herramientas de Investigación</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Análisis con Datos de la NASA</h3>
+          <p>Acceso a datos multiespectrales de satélites NASA (MODIS, VIIRS, Landsat) para análisis de índices de vegetación, temperatura de superficie y variables ambientales con aplicación en investigación fenológica.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Validación Científica</h3>
+          <p>Integración de observaciones de campo validadas por expertos con controles de calidad científicos. Protocolos estandarizados para garantizar la precisión de los datos en investigaciones publicables.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Modelado Predictivo</h3>
+          <p>Herramientas avanzadas para modelado de distribución de especies, predicción de eventos fenológicos y análisis de tendencias temporales con aplicaciones en conservación y cambio climático.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <!-- Sección 1: Marca -->
+    <div class="footer__brand">
+      <a href="index.html" class="brand-link" aria-label="Ir al inicio de EarthBloom">
+        <img src="images/logo_1.png" alt="Logo EarthBloom" class="brand-logo" loading="lazy" />
+      </a>
+      <p class="brand-tag" data-i18n="footer.brand.tag">Plataforma de investigación fenológica</p>
+      <div class="badge-row">
+        <a href="https://www.spaceappschallenge.org/" target="_blank" rel="noopener"
+           class="badge-link" aria-label="NASA Space Apps Challenge">
+          <img src="images/nasa.png" alt="NASA Space Apps Challenge" class="badge-logo" loading="lazy" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Sección 2: Navegación -->
+    <nav class="footer__nav" aria-label="Navegación del sitio">
+      <h4 class="footer__title" data-i18n="footer.nav.title">Sitio</h4>
+      <ul class="footer__list">
+        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="flores.html" data-i18n="nav.flowers">Flores</a></li>
+        <li><a href="nuestro_equipo.html" data-i18n="nav.team">Nuestro Equipo</a></li>
+        <li><a href="mapa.html" data-i18n="nav.map">Mapa (DEMO)</a></li>
+        <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sección 3: Recursos -->
+    <div class="footer__resources">
+      <h4 class="footer__title" data-i18n="footer.resources.title">Recursos</h4>
+      <ul class="footer__list">
+        <li><a href="https://observer.globe.gov/do-globe-observer/do-more/data-requests/wildflower-blooms" target="_blank" rel="noopener">Globe Observer</a></li>
+        <li><a href="https://leafletjs.com/" target="_blank" rel="noopener">LeafLet</a></li>
+        <li><a href="https://worldview.earthdata.nasa.gov/?v=-119.528848216234,36.747254672946376,-118.8926417704638,37.02623539111354&l=Reference_Labels_15m(hidden),Reference_Features_15m(hidden),Coastlines_15m,HLS_L30_Nadir_BRDF_Adjusted_Reflectance,HLS_S30_Nadir_BRDF_Adjusted_Reflectance,VIIRS_NOAA21_CorrectedReflectance_TrueColor(hidden),VIIRS_NOAA20_CorrectedReflectance_TrueColor(hidden),VIIRS_SNPP_CorrectedReflectance_TrueColor(hidden),MODIS_Aqua_CorrectedReflectance_TrueColor(hidden),MODIS_Terra_CorrectedReflectance_TrueColor&lg=false&t=2025-03-26-T12%3A35%3A19Z" target="_blank" rel="noopener">California Superbloom</a></li>
+      </ul>
+    </div>
+
+    <!-- Sección 4: Contacto -->
+    <div class="footer__contact">
+      <h4 class="footer__title" data-i18n="footer.contact.title">Contacto</h4>
+      <ul class="footer__list">
+        <li><a>emiliano.becerra5451@alumnos.udg.mx</a></li>
+        <li><a href="https://github.com/pedro-val1304/EarthBloom" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p data-i18n="footer.copyright">© 2025 EarthBloom. Todos los derechos reservados.</p>
+    <ul class="footer__legal">
+      <li><a href="#" data-i18n="footer.legal.privacy">Privacidad</a></li>
+      <li><a href="#" data-i18n="footer.legal.terms">Términos</a></li>
+      <li><a href="#" data-i18n="footer.legal.accessibility">Accesibilidad</a></li>
+    </ul>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

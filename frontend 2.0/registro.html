@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EarthBloom | Registro Científico</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo_2.png">
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="https://unpkg.com/i18next@23.7.6/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+</head>
+<body class="fade-in">
+  <div class="main-content">
+     <header class="header">
+      <a href="index.html" class="logo">
+        <img src="images/logo_2.png" class="logo-png" alt="EarthBloom Logo" />
+        <span class="logo-main">EarthBloom</span>
+        <span class="logo-sub">NASA</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">ES</button>
+
+      <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+       <a href="index.html" data-i18n="nav.home">Inicio</a>
+        <a href="flores.html" data-i18n="nav.flowers">Flores</a>
+        <a href="nuestro_equipo.html" data-i18n="nav.team">Nuestro Equipo</a>
+        <a href="../backend/templates/plugin.html" data-i18n="nav.map">Mapa (DEMO)</a>
+        <a href="registro.html" class="active" data-i18n="nav.register">Registro</a>
+      </nav>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <h2 data-i18n="register.title">Registro Científico Ciudadano</h2>
+      <p data-i18n="register.subtitle">Únete a nuestra iniciativa de ciencia ciudadana para el monitoreo de flora mexicana utilizando datos satelitales de la NASA</p>
+    </section>
+
+    <section class="features">
+      <div class="feature-grid" style="max-width: 600px; margin: 0 auto;">
+        <div class="feature-card" style="text-align: left; padding: 2rem;">
+          <form class="contact-form" id="registroForm">
+            <div style="margin-bottom: 1.5rem;">
+              <label for="cedula" style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;" data-i18n="register.form.cedula.label">Cédula Profesional / Identificación *</label>
+              <input type="text" id="cedula" name="cedula" placeholder="Ingresa tu cédula o identificación" data-i18n="[placeholder]register.form.cedula.placeholder" required
+                     style="width: 100%; padding: 0.8rem; border: 1px solid var(--blue-yonder); border-radius: 4px; background: rgba(255,255,255,0.1); color: black; font-family: 'Overpass', sans-serif;">
+              <small style="color: var(--slate-gray); font-size: 0.8rem;" data-i18n="register.form.cedula.help">Formato: números y letras sin espacios</small>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label for="nombre" style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;" data-i18n="register.form.nombre.label">Nombre Completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" data-i18n="[placeholder]register.form.nombre.placeholder" required
+                     style="width: 100%; padding: 0.8rem; border: 1px solid var(--blue-yonder); border-radius: 4px; background: rgba(255,255,255,0.1); color: black; font-family: 'Overpass', sans-serif;">
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <label for="institucion" style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;" data-i18n="register.form.institucion.label">Institución / Afiliación</label>
+              <input type="text" id="institucion" name="institucion" placeholder="Tu institución u organización" data-i18n="[placeholder]register.form.institucion.placeholder"
+                     style="width: 100%; padding: 0.8rem; border: 1px solid var(--blue-yonder); border-radius: 4px; background: rgba(255,255,255,0.1); color: black; font-family: 'Overpass', sans-serif;">
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <label for="especialidad" style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;" data-i18n="register.form.especialidad.label">Área de Especialidad</label>
+              <select id="especialidad" name="especialidad"
+                      style="width: 100%; padding: 0.8rem; border: 1px solid var(--blue-yonder); border-radius: 4px; background: rgba(255,255,255,0.1); color: black; font-family: 'Overpass', sans-serif;">
+                <option value="" data-i18n="register.form.especialidad.options.default">Selecciona tu especialidad</option>
+                <option value="botanica" data-i18n="register.form.especialidad.options.botanica">Botánica</option>
+                <option value="ecologia" data-i18n="register.form.especialidad.options.ecologia">Ecología</option>
+                <option value="investigacion" data-i18n="register.form.especialidad.options.investigacion">Investigación Científica</option>
+                <option value="educacion" data-i18n="register.form.especialidad.options.educacion">Educación Ambiental</option>
+                <option value="ciudadana" data-i18n="register.form.especialidad.options.ciudadana">Ciencia Ciudadana</option>
+                <option value="otro" data-i18n="register.form.especialidad.options.otro">Otro</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <label style="display: block; margin-bottom: 0.5rem; color: var(--neon-yellow); font-family: 'Fira Sans', sans-serif; font-weight: 600;" data-i18n="register.form.intereses.title">Intereses de Investigación</label>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                  <input type="checkbox" name="intereses" value="flora_endemica">
+                  <span data-i18n="register.form.intereses.flora_endemica">Flora Endémica</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                  <input type="checkbox" name="intereses" value="monitoreo_satelital">
+                  <span data-i18n="register.form.intereses.monitoreo_satelital">Monitoreo Satelital</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.5rem; font-size: 0.9rem;">
+                  <input type="checkbox" name="intereses" value="conservacion">
+                  <span data-i18n="register.form.intereses.conservacion">Conservación</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                  <input type="checkbox" name="intereses" value="cambio_climatico">
+                  <span data-i18n="register.form.intereses.cambio_climatico">Cambio Climático</span>
+                </label>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn" style="width: 100%; text-align: center;" data-i18n="register.form.submit">Registrarse en el Proyecto</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <!-- Sección 1: Marca -->
+    <div class="footer__brand">
+      <a href="index.html" class="brand-link" aria-label="Ir al inicio de EarthBloom">
+        <img src="images/logo_1.png" alt="Logo EarthBloom" class="brand-logo" loading="lazy" />
+      </a>
+      <p class="brand-tag" data-i18n="footer.brand.tag">Documentando la biodiversidad mexicana</p>
+      <div class="badge-row">
+        <a href="https://www.spaceappschallenge.org/" target="_blank" rel="noopener"
+           class="badge-link" aria-label="NASA Space Apps Challenge">
+          <img src="images/nasa.png" alt="NASA Space Apps Challenge" class="badge-logo" loading="lazy" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Sección 2: Navegación -->
+    <nav class="footer__nav" aria-label="Navegación del sitio">
+      <h4 class="footer__title" data-i18n="footer.nav.title">Sitio</h4>
+      <ul class="footer__list">
+        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="flores.html" data-i18n="nav.flowers">Flores</a></li>
+        <li><a href="nuestro_equipo.html" data-i18n="nav.team">Nuestro Equipo</a></li>
+        <li><a href="mapa.html" data-i18n="nav.map">Mapa (DEMO)</a></li>
+        <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sección 3: Recursos -->
+    <div class="footer__resources">
+      <h4 class="footer__title" data-i18n="footer.resources.title">Recursos</h4>
+      <ul class="footer__list">
+        <li><a href="https://observer.globe.gov/do-globe-observer/do-more/data-requests/wildflower-blooms" target="_blank" rel="noopener">Globe Observer</a></li>
+        <li><a href="https://leafletjs.com/" target="_blank" rel="noopener">LeafLet</a></li>
+        <li><a href="https://worldview.earthdata.nasa.gov/?v=-119.528848216234,36.747254672946376,-118.8926417704638,37.02623539111354&l=Reference_Labels_15m(hidden),Reference_Features_15m(hidden),Coastlines_15m,HLS_L30_Nadir_BRDF_Adjusted_Reflectance,HLS_S30_Nadir_BRDF_Adjusted_Reflectance,VIIRS_NOAA21_CorrectedReflectance_TrueColor(hidden),VIIRS_NOAA20_CorrectedReflectance_TrueColor(hidden),VIIRS_SNPP_CorrectedReflectance_TrueColor(hidden),MODIS_Aqua_CorrectedReflectance_TrueColor(hidden),MODIS_Terra_CorrectedReflectance_TrueColor&lg=false&t=2025-03-26-T12%3A35%3A19Z" target="_blank" rel="noopener">California Superbloom</a></li>
+      </ul>
+    </div>
+
+    <!-- Sección 4: Contacto -->
+    <div class="footer__contact">
+      <h4 class="footer__title" data-i18n="footer.contact.title">Contacto</h4>
+      <ul class="footer__list">
+        <li><a>emiliano.becerra5451@alumnos.udg.mx</a></li>
+        <li><a href="https://github.com/pedro-val1304/EarthBloom" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p data-i18n="footer.copyright">© 2025 EarthBloom. Todos los derechos reservados.</p>
+    <ul class="footer__legal">
+      <li><a href="#" data-i18n="footer.legal.privacy">Privacidad</a></li>
+      <li><a href="#" data-i18n="footer.legal.terms">Términos</a></li>
+      <li><a href="#" data-i18n="footer.legal.accessibility">Accesibilidad</a></li>
+    </ul>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
